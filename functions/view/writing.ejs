@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.1.1/firebase.js"></script>
+    <link rel="stylesheet/less" type="text/css" href="less/style.less" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>
+  </head>
+
+  <body class="main">
+    <script src="writing.js"></script>
+    <script>
+      var pageNum = parseInt(<%= pageNum %>);
+    </script>
+
+    <%if (parseInt(pageNum) === 0) { %>
+      <div class="mainDoc">
+        <input id="mainTitle" type="text" />
+        <input id="mainContents" type="text" />
+      </div>
+    <% } else { %>
+      <script>alert('new page');</script>
+    <% } %>
+    <div class="subDoc">
+      <input id="subTitle" type="text" />
+      <button id="addItem">Add Item</button>
+      <div id="subMain">
+      </div>
+    </div>
+    <div class="btns">
+      <button id="btnSave">Save</button>
+      <button id="btnCancel">Cancel</button>
+      <button id="btnNew">New</button>
+    </div>
+  </body>
+</html>

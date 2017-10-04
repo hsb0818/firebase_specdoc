@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.1.1/firebase.js"></script>
+    <link rel="stylesheet/less" type="text/css" href="less/login.less" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>
+  </head>
+  <body>
+    <script src="login.js"></script>
+    <div class="main">
+      <p id="txtLogin">state</p>
+      <input id="txtEmail" type="email" placeholder="Email" />
+      <input id="txtPassword" type="password" placeholder="Password" />
+      <button id="btnLogin">Log in</button>
+      <button id="btnLogout" class="hide">Log out</button>
+    </div>
+  </body>
+</html>
