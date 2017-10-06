@@ -1,9 +1,13 @@
-@bgcolor: #fff;
-@text-color: black;
+@bgcolor: #E0E0E0;
+@bodycolor: #fff;
+@textcolor: black;
+
+html {
+  background-color: @bgcolor;
+}
 
 body {
-  background-color: @bgcolor;
-  color: @text-color;
+  color: @textcolor;
   font-family: Georgia, serif;
   line-height: 1.5;
 }
@@ -13,7 +17,7 @@ body {
   margin: 45px auto;
   box-shadow: 0 0 20px;
   padding: 25px 45px;
-  background-color: @bgcolor;
+  background-color: @bodycolor;
 
   h1, h2 {
     font-family: "Helvetica", "Arial", sans-serif;
@@ -21,17 +25,6 @@ body {
 
   .hide {
     display: none;
-  }
-
-  .title {
-  }
-
-  .img-profile {
-    width: 180px;
-    height: 180px;
-    float:left;
-    margin-right: 10px;
-    border-radius: 50%;
   }
 
   #subtitle {

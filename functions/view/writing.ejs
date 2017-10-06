@@ -6,11 +6,13 @@
       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
       crossorigin="anonymous"></script>
     <script src="https://www.gstatic.com/firebasejs/4.1.1/firebase.js"></script>
-    <link rel="stylesheet/less" type="text/css" href="less/style.less" />
+    <link rel="stylesheet/less" type="text/css" href="less/writing.less" />
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
 
-  <body class="main">
+  <body class="main container">
     <script src="writing.js"></script>
     <script>
       var pageNum = parseInt(<%= pageNum %>);
@@ -18,22 +20,47 @@
 
     <%if (parseInt(pageNum) === 0) { %>
       <div class="mainDoc">
-        <input id="mainTitle" type="text" />
-        <input id="mainContents" type="text" />
+        <label>Main Title</label>
+        <input id="mainTitle" type="text" class="form-control" />
+        <label>Main Contents</label>
+        <input id="mainContents" type="text" class="form-control" />
       </div>
     <% } else { %>
       <script>alert('new page');</script>
     <% } %>
     <div class="subDoc">
-      <input id="subTitle" type="text" />
-      <button id="addItem">Add Item</button>
-      <div id="subMain">
+      <label>Sub Title</label>
+      <input id="subTitle" type="text" class="form-control" />
+      <label>Category</label>
+      <div class="bottom-space">
+        <div class="col-md-2 nopad right-space">
+          <select id="categoryList" class="form-control nopad"></select>
+        </div>
+        <button id="addItem" class="btn btn-warning right-space">Add Item</button>
+        <button id="removeItem" class="btn btn-danger">Remove Item</button>
+
+        <button id="addImg" class="btn btn-info">Add Image</button>
+        <input type="file" value="upload" id="uploadImg" class="hide" />
+        <div id="uploaderParent" class="progress vertical-space hide">
+          <div id="uploader" class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="0"
+          aria-valuemin="0" aria-valuemax="100" style="width:0%">
+            0%
+          </div>
+        </div>
+      </div>
+      <div id="subMain" class="bottom-space">
       </div>
     </div>
     <div class="btns">
-      <button id="btnSave">Save</button>
-      <button id="btnCancel">Cancel</button>
-      <button id="btnNew">New</button>
+      <button id="btnSave" class="btn btn-success right-space">Save</button>
+      <button id="btnCancel" class="btn btn-danger right-space">Cancel</button>
+      <button id="btnNew" class="btn btn-info">New</button>
+    </div>
+    <div id="saveParent" class="progress vertical-space hide float-clear">
+      <div id="saver" class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="0"
+      aria-valuemin="0" aria-valuemax="100" style="width:0%">
+        0%
+      </div>
     </div>
   </body>
 </html>

@@ -21,13 +21,13 @@ require('./configure')(app);
 
 app.get('/', (req, res) => {
   res.render('login', {
-    title: "login"
+    title: "Login"
   });
 });
 
 app.get('/home', (req, res) => {
   res.render('home', {
-    title: "home"
+    title: "Home"
   });
 });
 
@@ -39,12 +39,10 @@ app.get('/writing', (req, res) => {
 });
 
 app.get('/reading', (req, res) => {
-  const body = req.body;
-
-//  const root = db.search(body.title);
-
   res.render('reading', {
-    title: body.title
+    title: 'Reading',
+    main: req.query.main,
+    sub: req.query.sub
   });
 });
 
