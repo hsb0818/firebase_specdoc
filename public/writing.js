@@ -13,7 +13,8 @@ $(document).ready(() => {
   const rootRef = firebase.database().ref();
   const storageRef = firebase.storage().ref();
   const categoryList = $('#categoryList');
-  const imgList = [];
+  const imgList = {};
+  const imgItemStack = [];
 
   rootRef.child('category').once('value').then((snap) => {
     const categories = snap.val();
@@ -44,12 +45,37 @@ $(document).ready(() => {
     console.log(idx);
   });
 
+  $('#addContents').click(() => {
+    const div = $('<div></div>');
+    div.append('<label class="hide">Item Title</label>');
+    div.append('<input id="itemTitle' + idx.toString() + '" type="text" class="hide"></input>');
+    div.append('<label>Item Contents</label>');
+    div.append('<textarea id="itemContents' + idx.toString() + '" style="resize:none;" class="form-control" rows="5"></textarea>');
+
+    subMain.append(div);
+    idx++;
+    console.log(idx);
+  });
+
   $('#removeItem').click(() => {
     const delItem = $('#item' + (idx - 1).toString());
     delItem.remove();
 
     idx--;
     console.log(idx);
+  });
+
+  $('#removeImg').click(() => {
+    const curIdx = (idx - 1);
+    const lastFile = imgList[curIdx].pop();
+
+    if (lastFile !== undefined) {
+      const item = imgItemStack.pop();
+      if (item !== undefined)
+        item.remove();
+
+      storageRef.child('temp/' + lastFile.name).delete();
+    }
   });
 
   $('#addImg').click(() => {
@@ -78,7 +104,12 @@ $(document).ready(() => {
       },
       function complete() {
         setTimeout(() => {
-          imgList.push(file);
+          const index = idx - 1;
+          if (imgList.hasOwnProperty(index) === false) {
+            imgList[index] = [];
+          }
+          imgList[index].push(file);
+
           uploaderParent.addClass('hide');
           console.log('upload complete');
 
@@ -93,6 +124,7 @@ $(document).ready(() => {
           const div = $('<div class="img-center-wraper"></div>');
           div.append(imgItem);
           subMain.append(div);
+          imgItemStack.push(div);
         }, 1000);
       }
     );
@@ -109,10 +141,19 @@ $(document).ready(() => {
     for (let i=0; i<idx; i++) {
       const title = $('#itemTitle' + i.toString()).val();
       const contents = $('#itemContents' + i.toString()).val();
+      const imgItems = imgList.hasOwnProperty(i) ? imgList[i] : null;
+      const imgs = [];
+
+      if (imgItems !== null) {
+        for (const file of imgItems) {
+          imgs.push(file.name);
+        }
+      }
 
       items.push({
         title: title,
-        contents: contents
+        contents: contents,
+        imgs: imgs
       });
     }
 
@@ -148,36 +189,46 @@ $(document).ready(() => {
       });
     }
 
-    const saveParent = $('#saveParent');
-    const saver = $('#saver');
-
-    let completeCount = 0;
-    const completeFunc = () => {
-      storageRef.child('temp/' + imgList[0].name).delete();
-
-      completeCount++;
-      let per = (completeCount / imgList.length) * 100;
-
-      setTimeout(() => {
-        saver.attr('aria-valuenow', per.toString());
-        saver.css('width', per.toString() + '%');
-        saver.text(per.toString());
-
-        if (per === 100) {
-          saveParent.removeClass('hide');
-          console.log('move completed');
-        }
-      }, 1000);
-    };
-
-    for (const file of imgList) {
-      const strRef = firebase.storage().ref(subTitle + '/' + file.name);
-      const task = strRef.put(file);
-
-      task.on('state_changed', null, null, completeFunc);
+    let maxImgCount = 0;
+    for (const key in imgList) {
+      maxImgCount += imgList[key].length;
     }
 
-    console.log('save completed!!');
-    window.location.replace('/home');
+    const saveParent = $('#saveParent');
+    const saver = $('#saver');
+    let imgCount = 0;
+    const completeFunc = () => {
+      imgCount++;
+      if (imgCount === maxImgCount) {
+        for (const key in imgList) {
+          for (const file of imgList[key]) {
+            storageRef.child('temp/' + file.name).delete();
+          }
+        }
+
+        saveParent.addClass('hide');
+        console.log('save completed!!');
+
+        setTimeout(() => {
+          alert('save completed!');
+          window.location.replace('/');
+        }, 1000);
+      }
+
+      const per = (imgCount / maxImgCount) * 100;
+      saver.attr('aria-valuenow', per.toString());
+      saver.css('width', per.toString() + '%');
+      saver.text(per.toString());
+    };
+
+    saveParent.removeClass('hide');
+    for (const key in imgList) {
+      for (const file of imgList[key]) {
+        const strRef = firebase.storage().ref(subTitle + '/' + file.name);
+        const task = strRef.put(file);
+
+        task.on('state_changed', null, null, completeFunc);
+      }
+    }
   });
 });

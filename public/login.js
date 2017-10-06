@@ -40,7 +40,19 @@ $(document).ready(function() {
       console.log('logged in');
       console.log(firebaseUser);
 
-      window.location.replace('/home');
+      auth.currentUser.getIdToken(true).then((idToken) => {
+        $.post('loginAuth', {
+          idToken: idToken
+        },
+        (data, status) => {
+          if (data !== null) {
+            window.location.replace('/');
+          }
+          else {
+            alert('failed to login...');
+          }
+        });
+      });
     }
     else {
       txtEmail.removeClass('hide');

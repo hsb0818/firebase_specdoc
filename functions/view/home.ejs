@@ -15,8 +15,31 @@
       <header>
         <h1 class="title">Hello! I'm teraphonia.</h1>
       </header>
-      <button id="btnLogout">Log out</button>
-      <button id="btnWriting">Writing</button>
+
+      <%if (isAdmin === true) { %>
+        <button id="btnLogout">Log out</button>
+        <button id="btnWriting">Writing</button>
+        <script>
+          $(document).ready(() => {
+            const btnLogout = $('#btnLogout');
+            btnLogout.click(() => {
+              firebase.auth().signOut();
+
+              $.post('logoutAuth', null,
+                (data, status) => {
+                  window.location.reload();
+                }
+              );
+            });
+
+            const btnWriting = $('#btnWriting');
+            btnWriting.click(() => {
+              window.location.href = '/writing?pageNum=0';
+            });
+          });
+        </script>
+      <% } %>
+
       <p>
         <img class="img-profile"/>
       </p>
@@ -30,7 +53,6 @@
         Here are some things I’ve made and written over the years.
       </p>
       <div id="subMain">
-
       </div>
     </div>
   </body>
