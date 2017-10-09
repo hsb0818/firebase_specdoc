@@ -19,7 +19,7 @@ module.exports = function(app, fbRef) {
   app.use(bodyParser.urlencoded({extended:true})); // to support URL-encoded bodies
   app.use(session({
     store: new FirebaseStore({
-      database: firebase.database()
+      database: fbRef.database()
     }),
     secret: '!@h#$s%b^&08*(hsb0818)!',
     resave: false,
