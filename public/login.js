@@ -7,6 +7,7 @@ $(document).ready(function() {
   };
 
   firebase.initializeApp(firebaseConfig);
+  console.log(firebase);
 
   const txtEmail = $('#txtEmail');
   const txtPassword = $('#txtPassword');
@@ -18,7 +19,7 @@ $(document).ready(function() {
   btnLogin.click(() => {
     const email = txtEmail.val();
     const pass = txtPassword.val();
-    const promise = auth.signInWithEmailAndPassword(email, pass);
+    let promise = auth.signInWithEmailAndPassword(email, pass);
 
     promise.catch((e) => {
       console.log(e.message);
@@ -39,14 +40,21 @@ $(document).ready(function() {
       $('#txtLogin').text('welcome ' + firebaseUser.email);
       console.log('logged in');
       console.log(firebaseUser);
-
+/*
+  // https://stackoverflow.com/questions/10230341/http-cookies-and-ajax-requests-over-https
+   xhrFields: {
+     withCredentials: true
+   }
+*/
       auth.currentUser.getIdToken(true).then((idToken) => {
         $.post('loginAuth', {
           idToken: idToken
         },
         (data, status) => {
           if (data !== null) {
-            window.location.replace('/');
+            if (window.confirm('login successed : ' + data)) {
+              window.location.replace('/');
+            }
           }
           else {
             alert('failed to login...');

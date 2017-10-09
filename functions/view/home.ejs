@@ -16,6 +16,10 @@
         <h1 class="title">Hello! I'm teraphonia.</h1>
       </header>
 
+      <script>
+        var isAdmin = <%= isAdmin %>;
+      </script>
+
       <%if (isAdmin === true) { %>
         <button id="btnLogout">Log out</button>
         <button id="btnWriting">Writing</button>
