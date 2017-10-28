@@ -48,7 +48,7 @@ $(document).ready(function() {
         const doc = $('<p></p>');
         const href = $('<a></a>');
 
-        href.attr('href', '/reading?' +
+        href.attr('href', '/document?' +
           'main=' + i.toString() + '&sub=0');
         href.append('<strong>' + docs[i].title + '</strong>');
 
@@ -60,7 +60,7 @@ $(document).ready(function() {
         for (const j in items) {
           const item = $('<li></li>');
           const href = $('<a></a>');
-          href.attr('href', '/reading?' +
+          href.attr('href', '/document?' +
             'main=' + i.toString() + '&sub=' + j.toString());
           href.text(items[j].title);
 

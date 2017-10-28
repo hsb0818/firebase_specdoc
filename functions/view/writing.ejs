@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <title><%= title %> <%= pageNum %></title>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
       crossorigin="anonymous"></script>
@@ -55,7 +55,10 @@
     <div class="btns">
       <button id="btnSave" class="btn btn-success right-space">Save</button>
       <button id="btnCancel" class="btn btn-danger right-space">Cancel</button>
-      <button id="btnNew" class="btn btn-info">New</button>
+      <form action="/document" method="post" style="display:inline-block">
+        <input id="formdataPageNum" type="hidden" name="pageNum" value="-1">
+        <button id="btnNew" class="btn btn-info">New</button>
+      </form>
     </div>
     <div id="saveParent" class="progress vertical-space hide float-clear">
       <div id="saver" class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="0"

@@ -12,6 +12,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const session = require('express-session');
 const ejs = require('ejs');
+const server = require('http').Server(app);
 
 const serviceAccount = require("./auth/serviceAccountKey.json");
 const fbRef = firebase.initializeApp({
@@ -22,6 +23,11 @@ const fbRef = firebase.initializeApp({
 require('./configure')(app, fbRef);
 
 const database = firebase.database();
+
+app.set('port', process.env.PORT || 9220);
+server.listen(app.get('port'), (req, res) => {
+  console.log('listening on port ' + app.get('port'));
+});
 
 app.get('/', (req, res) => {
   req.session.myid = 'hsb0818';
@@ -40,7 +46,7 @@ app.get('/login', (req, res) => {
   });
 });
 
-app.get('/writing', (req, res) => {
+app.post('/document', (req, res) => {
   const isAdmin = (req.session.hasOwnProperty('uid')) ? true : false;
   if (isAdmin === false) {
     res.send('u r not admin');
@@ -49,11 +55,11 @@ app.get('/writing', (req, res) => {
 
   res.render('writing', {
     title: 'Writing',
-    pageNum: req.query.pageNum
+    pageNum: req.body.pageNum
   });
 });
 
-app.get('/reading', (req, res) => {
+app.get('/document', (req, res) => {
   res.render('reading', {
     title: 'Reading',
     main: req.query.main,
@@ -61,7 +67,7 @@ app.get('/reading', (req, res) => {
   });
 });
 
-app.post('/loginAuth', (req, res) => {
+app.post('/login', (req, res) => {
   if (req.body.hasOwnProperty('idToken') === false)
   {
     res.send(null);
@@ -80,9 +86,9 @@ app.post('/loginAuth', (req, res) => {
   });
 });
 
-app.post('/logoutAuth', (req, res) => {
+app.delete('/login', (req, res) => {
   req.session.destroy();
   res.send(true);
 });
 
-exports.app = functions.https.onRequest(app);
+//exports.app = functions.https.onRequest(app);

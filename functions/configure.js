@@ -14,21 +14,24 @@ module.exports = function(app, fbRef) {
   // cookie
   //app.use(cookieParser());
   // session security
-//  app.set('trust proxy', 1); // trust first proxy
-  app.use(bodyParser.json()); // to support JSON-encoded bodies
-  app.use(bodyParser.urlencoded({extended:true})); // to support URL-encoded bodies
+  app.set('trust proxy', 1); // trust first proxy
   app.use(session({
     store: new FirebaseStore({
       database: fbRef.database()
     }),
     secret: '!@h#$s%b^&08*(hsb0818)!',
+    proxy: true,
     resave: false,
     saveUninitialized: true,
-    cookie: {
+    cookie: { secure: false }
+  }));
+/*
+      httpOnly: true,
       expires: new Date(Date.now() + 1000 * 60 * 60),
       maxAge: 1000 * 60 * 60, // 1 hour
-      secure: false, // https : true
-      httpOnly: true,
-    }
-  }));
+*/
+
+  app.use(bodyParser.json()); // to support JSON-encoded bodies
+  app.use(bodyParser.urlencoded({extended:true})); // to support URL-encoded bodies
+  app.use(express.static('../public'));
 };

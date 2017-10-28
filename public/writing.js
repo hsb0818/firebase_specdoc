@@ -130,11 +130,7 @@ $(document).ready(() => {
     );
   });
 
-  $('#btnNew').click(() => {
-    console.log(pageNum);
-    window.location.replace('/writing?pageNum=' + (pageNum + 1).toString());
-  });
-
+  $('#formdataPageNum').attr('value', pageNum + 1);
   $('#btnSave').click(() => {
     const subTitle = $('#subTitle').val();
     const items = [];

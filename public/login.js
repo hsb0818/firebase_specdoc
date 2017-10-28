@@ -46,18 +46,29 @@ $(document).ready(function() {
      withCredentials: true
    }
 */
+      $.ajaxSetup({
+          crossDomain: true,
+          xhrFields: {
+              withCredentials: true
+          },
+      });
+
       auth.currentUser.getIdToken(true).then((idToken) => {
-        $.post('loginAuth', {
-          idToken: idToken
-        },
-        (data, status) => {
-          if (data !== null) {
-            if (window.confirm('login successed : ' + data)) {
-              window.location.replace('/');
+        $.ajax({
+          url: 'login',
+          data: {
+            idToken: idToken
+          },
+          type: 'POST',
+          success: (data, status) => {
+            if (data !== null) {
+              if (window.confirm('login successed : ' + data)) {
+                window.location.replace('/');
+              }
             }
-          }
-          else {
-            alert('failed to login...');
+            else {
+              alert('failed to login...');
+            }
           }
         });
       });

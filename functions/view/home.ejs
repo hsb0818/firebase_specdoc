@@ -22,23 +22,24 @@
 
       <%if (isAdmin === true) { %>
         <button id="btnLogout">Log out</button>
-        <button id="btnWriting">Writing</button>
+        <form action="/document" method="post" style="display:inline-block">
+          <input type="hidden" name="pageNum" value="0">
+          <button id="btnWriting">Writing</button>
+        </form>
         <script>
           $(document).ready(() => {
             const btnLogout = $('#btnLogout');
             btnLogout.click(() => {
               firebase.auth().signOut();
 
-              $.post('logoutAuth', null,
-                (data, status) => {
+              $.ajax({
+                url: 'login',
+                data: null,
+                type: 'DELETE',
+                success: (data, status) => {
                   window.location.reload();
                 }
-              );
-            });
-
-            const btnWriting = $('#btnWriting');
-            btnWriting.click(() => {
-              window.location.href = '/writing?pageNum=0';
+              });
             });
           });
         </script>
