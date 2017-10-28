@@ -12,7 +12,6 @@ const app = express();
 const bodyParser = require('body-parser');
 const session = require('express-session');
 const ejs = require('ejs');
-const server = require('http').Server(app);
 
 const serviceAccount = require("./auth/serviceAccountKey.json");
 const fbRef = firebase.initializeApp({
@@ -23,11 +22,6 @@ const fbRef = firebase.initializeApp({
 require('./configure')(app, fbRef);
 
 const database = firebase.database();
-
-app.set('port', process.env.PORT || 9220);
-server.listen(app.get('port'), (req, res) => {
-  console.log('listening on port ' + app.get('port'));
-});
 
 app.get('/', (req, res) => {
   req.session.myid = 'hsb0818';
@@ -91,4 +85,23 @@ app.delete('/login', (req, res) => {
   res.send(true);
 });
 
-//exports.app = functions.https.onRequest(app);
+exports.app = functions.https.onRequest(app);
+
+/*
+const http = require('http');
+const https = require('https');
+const fs = require('fs');
+const options = {
+  key: fs.readFileSync('./auth/private.pem'),
+  cert: fs.readFileSync('./auth/public.pem')
+};
+app.set('port', process.env.PORT || 9220);
+
+http.createServer(app).listen(app.get('port'), () => {
+  console.log('http server listening port ' + app.get('port'));
+});
+
+https.createServer(options, app).listen(9221, () => {
+  console.log('https server listening port 9221');
+});
+*/

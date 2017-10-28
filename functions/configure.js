@@ -11,16 +11,16 @@ module.exports = function(app, fbRef) {
 //  app.set('views', [__dirname + '/view', __dirname + '/game/ship/view']);
   app.set('views', __dirname + '/view');
 
-  // cookie
-  //app.use(cookieParser());
+  app.use(cookieParser());
   // session security
   app.set('trust proxy', 1); // trust first proxy
   app.use(session({
     store: new FirebaseStore({
-      database: fbRef.database()
+      database: fbRef.database(),
+      sessions: '__session'
     }),
+    name: '__session',
     secret: '!@h#$s%b^&08*(hsb0818)!',
-    proxy: true,
     resave: false,
     saveUninitialized: true,
     cookie: { secure: false }
