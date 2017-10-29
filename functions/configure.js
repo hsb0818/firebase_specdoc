@@ -15,15 +15,17 @@ module.exports = function(app, fbRef) {
   // session security
   app.set('trust proxy', 1); // trust first proxy
   app.use(session({
+    name: '__session',
     store: new FirebaseStore({
       database: fbRef.database(),
       sessions: '__session'
     }),
-    name: '__session',
     secret: '!@h#$s%b^&08*(hsb0818)!',
     resave: false,
     saveUninitialized: true,
-    cookie: { secure: false }
+    cookie: {
+      secure: false,
+    }
   }));
 /*
       httpOnly: true,

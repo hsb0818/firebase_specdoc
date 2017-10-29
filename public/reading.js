@@ -63,8 +63,14 @@ $(document).ready(() => {
             }
           });
         }
+        else {
+          if (items.length > 0) {
+            Loader(items.shift());
+          }
+        }
       }
 
+      console.log('items: ' + items.length.toString());
       Loader(items.shift());
     });
   });

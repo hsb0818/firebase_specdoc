@@ -203,12 +203,6 @@ $(document).ready(() => {
         }
 
         saveParent.addClass('hide');
-        console.log('save completed!!');
-
-        setTimeout(() => {
-          alert('save completed!');
-          window.location.replace('/');
-        }, 1000);
       }
 
       const per = (imgCount / maxImgCount) * 100;
@@ -226,5 +220,10 @@ $(document).ready(() => {
         task.on('state_changed', null, null, completeFunc);
       }
     }
+    console.log('save completed!!');
+
+    setTimeout(() => {
+      alert('save completed!');
+    }, 1000);
   });
 });

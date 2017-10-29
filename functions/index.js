@@ -86,7 +86,6 @@ app.delete('/login', (req, res) => {
 });
 
 exports.app = functions.https.onRequest(app);
-
 /*
 const http = require('http');
 const https = require('https');
@@ -104,4 +103,5 @@ http.createServer(app).listen(app.get('port'), () => {
 https.createServer(options, app).listen(9221, () => {
   console.log('https server listening port 9221');
 });
+
 */
