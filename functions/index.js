@@ -61,6 +61,19 @@ app.get('/document', (req, res) => {
   });
 });
 
+app.post('/modifying', (req, res) => {
+  const isAdmin = (req.session.hasOwnProperty('uid')) ? true : false;
+  if (isAdmin === false) {
+    res.send('u r not admin');
+    return;
+  }
+
+  res.render('modifying', {
+    title: 'Modifying',
+    pageNum: req.body
+  });
+});
+
 app.post('/login', (req, res) => {
   if (req.body.hasOwnProperty('idToken') === false)
   {

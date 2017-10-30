@@ -47,9 +47,9 @@ $(document).ready(function() {
         const root = $('<li></li>');
         const doc = $('<p></p>');
         const href = $('<a></a>');
+        const url = '/document?' + 'main=' + i.toString() + '&sub=0';
 
-        href.attr('href', '/document?' +
-          'main=' + i.toString() + '&sub=0');
+        href.attr('href', url);
         href.append('<strong>' + docs[i].title + '</strong>');
 
         doc.append(href);
@@ -60,12 +60,22 @@ $(document).ready(function() {
         for (const j in items) {
           const item = $('<li></li>');
           const href = $('<a></a>');
-          href.attr('href', '/document?' +
-            'main=' + i.toString() + '&sub=' + j.toString());
+
+          href.attr('href', '/document?main=' + i.toString() + '&sub=' + j.toString());
           href.text(items[j].title);
 
           item.append(href);
           ul.append(item);
+
+          if (isAdmin) {
+            const form = $('<form></form>');
+            form.attr('action', '/modifying');
+            form.attr('method', 'post');
+            form.append('<input type="hidden" name="main" value="' + i.toString() + '"');
+            form.append('<input type="hidden" name="sub" value="' + j.toString() + '"');
+            form.append('<button>modifying</button>');
+            form.insertBefore(href);
+          }
         }
 
         root.append(doc);
