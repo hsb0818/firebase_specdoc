@@ -7,71 +7,117 @@ $(document).ready(() => {
   };
 
   firebase.initializeApp(firebaseConfig);
-  console.log('firebase init completed!');
+//  console.log('firebase init completed!');
 
   const auth = firebase.auth();
   const rootRef = firebase.database().ref();
   const storageRef = firebase.storage().ref();
-  const pageRef = rootRef.child('docs/' + main.toString() + '/items/' + sub.toString());
+  const pageRef = rootRef.child('docs/' + main.toString() + '/items/');
   const subMain = $('#subMain');
+  let pages = null;
   let subTitle = "";
-
   pageRef.once('value').then((snap) => {
-    subTitle = snap.val().title;
+    pages = snap.val();
+    subTitle = pages[sub].title;
     $('#subTitle').text(subTitle);
   })
   .then(() => {
-    pageRef.child('items').once('value').then((snap) => {
-      function ImageSet(url) {
-        const imgItem = $('<img>');
-        imgItem.addClass('img-center');
-        imgItem.attr('src', url);
+    const items = pages[sub].items;
+    let nextUrl = '/document?main=' + main.toString() + '&sub=';
 
-        const div = $('<div class="img-center-wraper"></div>');
-        div.append(imgItem);
-        subMain.append(div);
+    $('div.nav').append('<a href=' + nextUrl + '0><< Series Start</a>');
+
+    const pageList = $('#pageList');
+    for (const i in pages) {
+      const pageItem = $('<a></a>');
+      pageItem.attr('href', nextUrl + i.toString());
+      pageItem.append(pages[i].title);
+
+      pageList.append(pageItem);
+      if (i < pages.length -1)
+        pageList.append(' · ');
+    }
+
+    let prevSub = -1;
+    let nextSub = -1;
+    if (sub > 0)
+      prevSub = sub - 1;
+    if (sub < pages.length -1)
+      nextSub = sub + 1;
+
+    const navPageDiv = $('.centered');
+    function SetPageNav(subPage, isLeft) {
+      if (subPage < 0 || subPage > pages.length -1)
+        return false;
+
+      const url = nextUrl + subPage.toString();
+
+      let title = null;
+      if (isLeft)
+        title = '<strong><< ' + pages[subPage].title + '</strong>';
+      else
+        title = '<strong>' + pages[subPage].title + ' >></strong>';
+
+      const navPage = $('<a></a>');
+      navPage.attr('href', url);
+      navPage.append(title);
+      navPageDiv.append(navPage);
+
+      return true;
+    }
+
+    if (SetPageNav(prevSub, true))
+      navPageDiv.append(' · ');
+    if (SetPageNav(nextSub, false) === false)
+      navPageDiv.append('<a href=' + nextUrl + '0>Series Start</a>');
+
+    function ImageSet(url) {
+      const imgItem = $('<img>');
+      imgItem.addClass('img-center');
+      imgItem.attr('src', url);
+
+      const div = $('<div class="img-center-wraper"></div>');
+      div.append(imgItem);
+      subMain.append(div);
+    }
+
+    function Loader(item) {
+      if (item === null)
+        return;
+
+      const title = $('<h2 class="subtitle"></h2>').text(item.title);
+      const contents = $('<p></p>').text(item.contents);
+      const imgs = item.hasOwnProperty('imgs') ? item.imgs : null;
+
+      if (item.title.length > 0) {
+        subMain.append(title);
       }
+      subMain.append(contents);
 
-      const items = snap.val();
-      function Loader(item) {
-        if (item === null)
-          return;
-
-        const title = $('<h2 class="subtitle"></h2>').text(item.title);
-        const contents = $('<p></p>').text(item.contents);
-        const imgs = item.hasOwnProperty('imgs') ? item.imgs : null;
-
-        if (item.title.length > 0) {
-          subMain.append(title);
+      if (imgs !== null) {
+        const promises = [];
+        for (const imgTitle of imgs) {
+          const img = storageRef.child(subTitle + '/' + imgTitle);
+          promises.push(img.getDownloadURL());
         }
-        subMain.append(contents);
 
-        if (imgs !== null) {
-          const promises = [];
-          for (const imgTitle of imgs) {
-            const img = storageRef.child(subTitle + '/' + imgTitle);
-            promises.push(img.getDownloadURL());
+        Promise.all(promises).then((values) => {
+          for (const url of values) {
+            ImageSet(url);
           }
 
-          Promise.all(promises).then((values) => {
-            for (const url of values) {
-              ImageSet(url);
-            }
-
-            if (items.length > 0) {
-              Loader(items.shift());
-            }
-          });
-        }
-        else {
           if (items.length > 0) {
             Loader(items.shift());
           }
+        });
+      }
+      else {
+        if (items.length > 0) {
+          Loader(items.shift());
         }
       }
+    }
 
-      console.log('items: ' + items.length.toString());
-      Loader(items.shift());
-    });
+    Loader(items.shift());
   });
 });

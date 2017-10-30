@@ -79,4 +79,36 @@ body {
     display: block;
     clear: both;
   }
+
+  .centered {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  div.nav {
+    border-bottom: 1px solid #ccc;
+  }
+
+  div.nav a.homelink {
+    color: lightgrey;
+    font-size: 20pt;
+    float: right;
+    text-decoration: none;
+  }
+  div.nav a.homelink:hover {
+    color: black;
+  }
+
+  div.nav:after {
+    .float-clear;
+  }
 }
