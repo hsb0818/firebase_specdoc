@@ -69,10 +69,10 @@ $(document).ready(function() {
 
           if (isAdmin) {
             const form = $('<form></form>');
-            form.attr('action', '/modifying');
+            form.attr('action', '/document');
             form.attr('method', 'post');
-            form.append('<input type="hidden" name="main" value="' + i.toString() + '"');
-            form.append('<input type="hidden" name="sub" value="' + j.toString() + '"');
+            form.append('<input type="hidden" name="main" value="' + i.toString() + '">');
+            form.append('<input type="hidden" name="sub" value="' + j.toString() + '">');
             form.append('<button>modifying</button>');
             form.insertBefore(href);
           }

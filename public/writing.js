@@ -30,31 +30,38 @@ $(document).ready(() => {
 
   const subMain = $('#subMain');
   let idx = 0;
+
+  // if not writing
+  if (main >= 0) {
+    const pageRef = rootRef.child('docs/' + main.toString());
+    pageRef.once('value').then((snap) => {
+      const pages = snap.val();
+      if (sub === 0) {
+        $('#mainTitle').val(pages.title);
+        $('#mainContents').val(pages.contents);
+      }
+
+      const subTitle = pages.items[sub].title;
+      $('#subTitle').val();
+
+      const items = pages.items[sub].items;
+      for (const i in items) {
+        if (items[i].title.length === 0) {
+          AddContents(subMain, items[i].contents);
+        }
+        else {
+          AddItem(subMain, items[i].title, items[i].contents);
+        }
+      }
+    });
+  }
+
   $('#addItem').click(() => {
-    const div = $('<div></div>');
-    div.attr('id', 'item' + idx.toString());
-
-    div.append('<label>Item Title</label>');
-    div.append('<input id="itemTitle' + idx.toString() + '" type="text" class="form-control"></input>');
-    div.append('<label>Item Contents</label>');
-    div.append('<textarea id="itemContents' + idx.toString() + '" style="resize:none;" class="form-control" rows="5"></textarea>');
-
-    subMain.append(div);
-
-    idx++;
-    console.log(idx);
+    AddItem(subMain);
   });
 
   $('#addContents').click(() => {
-    const div = $('<div></div>');
-    div.append('<label class="hide">Item Title</label>');
-    div.append('<input id="itemTitle' + idx.toString() + '" type="text" class="hide"></input>');
-    div.append('<label>Item Contents</label>');
-    div.append('<textarea id="itemContents' + idx.toString() + '" style="resize:none;" class="form-control" rows="5"></textarea>');
-
-    subMain.append(div);
-    idx++;
-    console.log(idx);
+    AddContents(subMain);
   });
 
   $('#removeItem').click(() => {
@@ -130,7 +137,8 @@ $(document).ready(() => {
     );
   });
 
-  $('#formdataPageNum').attr('value', pageNum + 1);
+  $('#formdataMain').attr('value', main);
+  $('#formdataSub').attr('value', sub + 1);
   $('#btnSave').click(() => {
     const subTitle = $('#subTitle').val();
     const items = [];
@@ -138,7 +146,7 @@ $(document).ready(() => {
       const title = $('#itemTitle' + i.toString()).val();
       const contents = $('#itemContents' + i.toString()).val();
       const imgItems = imgList.hasOwnProperty(i) ? imgList[i] : null;
-      const imgs = [];
+      let imgs = [];
 
       if (imgItems !== null) {
         for (const file of imgItems) {
@@ -153,7 +161,7 @@ $(document).ready(() => {
       });
     }
 
-    if (pageNum === 0) {
+    if (sub === 0) {
       const mainTitle = $('#mainTitle').val();
       const mainContents = $('#mainContents').val();
 
@@ -179,7 +187,7 @@ $(document).ready(() => {
 
       rootRef.child('docs').once('value', (snap) => {
         const num = snap.numChildren() - 1;
-        const query = 'docs/' + num.toString() + '/items/' + pageNum.toString();
+        const query = 'docs/' + num.toString() + '/items/' + sub.toString();
         console.log(query);
         rootRef.child(query).set(data);
       });
@@ -226,4 +234,38 @@ $(document).ready(() => {
       alert('save completed!');
     }, 1000);
   });
+
+  function AddItem(root, title, contents) {
+    const div = $('<div></div>');
+    div.attr('id', 'item' + idx.toString());
+
+    div.append('<label>Item Title</label>');
+    div.append('<input id="itemTitle' + idx.toString() + '" type="text" class="form-control" value=' + title + '></input>');
+    div.append('<label>Item Contents</label>');
+    div.append('<textarea id="itemContents' + idx.toString() + '" style="resize:none;" class="form-control" rows="5">' + contents + '</textarea>');
+
+    root.append(div);
+    idx++;
+  }
+
+  function AddContents(root, contents) {
+    const div = $('<div></div>');
+    div.append('<label class="hide">Item Title</label>');
+    div.append('<input id="itemTitle' + idx.toString() + '" type="text" class="hide"></input>');
+    div.append('<label>Item Contents</label>');
+    div.append('<textarea id="itemContents' + idx.toString() + '" style="resize:none;" class="form-control" rows="5">' + contents + '</textarea>');
+
+    root.append(div);
+    idx++;
+  }
+
+  function ImageSet(root, url) {
+    const imgItem = $('<img>');
+    imgItem.addClass('img-center');
+    imgItem.attr('src', url);
+
+    const div = $('<div class="img-center-wraper"></div>');
+    div.append(imgItem);
+    root.append(div);
+  }
 });

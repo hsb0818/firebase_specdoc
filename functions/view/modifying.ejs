@@ -11,6 +11,59 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
-  <body>
+  <body class="main container">
+    <script src="writing.js"></script>
+    <script>
+      var pageNum = parseInt(<%= pageNum %>);
+    </script>
+
+    <%if (parseInt(pageNum) === 0) { %>
+      <div class="mainDoc">
+        <label>Main Title</label>
+        <input id="mainTitle" type="text" class="form-control" />
+        <label>Main Contents</label>
+        <input id="mainContents" type="text" class="form-control" />
+      </div>
+    <% } else { %>
+      <script>alert('new page');</script>
+    <% } %>
+    <div class="subDoc">
+      <label>Sub Title</label>
+      <input id="subTitle" type="text" class="form-control" />
+      <label>Category</label>
+      <div class="bottom-space">
+        <div class="col-md-2 nopad right-space">
+          <select id="categoryList" class="form-control nopad"></select>
+        </div>
+        <button id="addItem" class="btn btn-warning right-space">Add Item</button>
+        <button id="addContents" class="btn btn-warning right-space">Add Contents</button>
+        <button id="removeItem" class="btn btn-danger">Remove Item</button>
+        <button id="removeImg" class="btn btn-danger">Remove Image</button>
+        <button id="addImg" class="btn btn-info">Add Image</button>
+        <input type="file" value="upload" id="uploadImg" class="hide" />
+        <div id="uploaderParent" class="progress vertical-space hide">
+          <div id="uploader" class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="0"
+          aria-valuemin="0" aria-valuemax="100" style="width:0%">
+            0%
+          </div>
+        </div>
+      </div>
+      <div id="subMain" class="bottom-space">
+      </div>
+    </div>
+    <div class="btns">
+      <button id="btnSave" class="btn btn-success right-space">Save</button>
+      <button id="btnCancel" class="btn btn-danger right-space">Cancel</button>
+      <form action="/document" method="post" style="display:inline-block">
+        <input id="formdataPageNum" type="hidden" name="pageNum" value="-1">
+        <button id="btnNew" class="btn btn-info">New</button>
+      </form>
+    </div>
+    <div id="saveParent" class="progress vertical-space hide float-clear">
+      <div id="saver" class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="0"
+      aria-valuemin="0" aria-valuemax="100" style="width:0%">
+        0%
+      </div>
+    </div>
   </body>
 </html>

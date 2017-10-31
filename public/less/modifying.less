@@ -1,0 +1,98 @@
+@bgcolor: #E0E0E0;
+@bodycolor: #fff;
+@textcolor: black;
+
+html {
+  background-color: @bgcolor;
+}
+
+body {
+  color: @textcolor;
+  font-family: Georgia, serif;
+  line-height: 1.5;
+}
+
+.main {
+  max-width: 960px;
+  margin: 45px auto;
+  box-shadow: 0 0 20px;
+  padding: 25px 45px;
+  background-color: @bodycolor;
+
+  h1, h2 {
+    font-family: "Helvetica", "Arial", sans-serif;
+  }
+
+  a {
+    text-decoration: none;
+    color: #2020FF;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .title {
+  }
+
+  .img-profile {
+    width: 180px;
+    height: 180px;
+    float:left;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+
+  .img-center-wraper {
+    margin: 15px auto;
+    display: block;
+    width: 90%;
+  }
+
+  .img-center {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .subtitle {
+    border-bottom: 1px solid;
+  }
+
+  .bottom-space {
+    margin-bottom: 15px;
+  }
+
+  .right-space {
+    margin-right: 15px;
+  }
+
+  .vertical-space {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  input {
+    .bottom-space;
+  }
+
+  .nopad {
+    padding: 0;
+  }
+
+  .btns {
+    float: right;
+  }
+
+  .uploadImg {
+    width: 50px;
+    height: 50px;
+  }
+
+  .float-clear {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}

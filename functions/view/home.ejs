@@ -23,7 +23,8 @@
       <%if (isAdmin === true) { %>
         <button id="btnLogout">Log out</button>
         <form action="/document" method="post" style="display:inline-block">
-          <input type="hidden" name="pageNum" value="0">
+          <input type="hidden" name="main" value="-1">
+          <input type="hidden" name="sub" value="0">
           <button id="btnWriting">Writing</button>
         </form>
         <script>

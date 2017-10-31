@@ -86,7 +86,7 @@ $(document).ready(() => {
         return;
 
       const title = $('<h2 class="subtitle"></h2>').text(item.title);
-      const contents = $('<p></p>').text(item.contents);
+      const contents = $('<p>' + item.contents.replace(/\n/gi, "<br>") +'</p>');
       const imgs = item.hasOwnProperty('imgs') ? item.imgs : null;
 
       if (item.title.length > 0) {

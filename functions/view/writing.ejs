@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %> <%= pageNum %></title>
+    <title><%= title %> | main<%= main %>sub<%= sub %></title>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
       crossorigin="anonymous"></script>
@@ -13,12 +13,13 @@
   </head>
 
   <body class="main container">
-    <script src="writing.js"></script>
     <script>
-      var pageNum = parseInt(<%= pageNum %>);
+      var main = parseInt(<%= main %>);
+      var sub = parseInt(<%= sub %>);
     </script>
+    <script src="writing.js"></script>
 
-    <%if (parseInt(pageNum) === 0) { %>
+    <%if (parseInt(sub) === 0) { %>
       <div class="mainDoc">
         <label>Main Title</label>
         <input id="mainTitle" type="text" class="form-control" />
@@ -56,7 +57,8 @@
       <button id="btnSave" class="btn btn-success right-space">Save</button>
       <button id="btnCancel" class="btn btn-danger right-space">Cancel</button>
       <form action="/document" method="post" style="display:inline-block">
-        <input id="formdataPageNum" type="hidden" name="pageNum" value="-1">
+        <input id="formdataMain" type="hidden" name="main" value="-1">
+        <input id="formdataSub" type="hidden" name="sub" value="-1">
         <button id="btnNew" class="btn btn-info">New</button>
       </form>
     </div>
