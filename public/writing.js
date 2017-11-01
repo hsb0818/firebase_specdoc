@@ -1,4 +1,7 @@
 $(document).ready(() => {
+  $('#formdataMain').attr('value', main);
+  $('#formdataSub').attr('value', sub + 1);
+
   const firebaseConfig = {
     apiKey: "AIzaSyCsqZVYemoQGrQlK_mm6C6Cu9CrlYfSDjM",
     authDomain: "teraphonia.firebaseapp.com",
@@ -30,7 +33,7 @@ $(document).ready(() => {
 
   const subMain = $('#subMain');
   let idx = 0;
-
+  /*
   // if not writing
   if (main >= 0) {
     const pageRef = rootRef.child('docs/' + main.toString());
@@ -55,6 +58,7 @@ $(document).ready(() => {
       }
     });
   }
+  */
 
   $('#addItem').click(() => {
     AddItem(subMain);
@@ -137,8 +141,6 @@ $(document).ready(() => {
     );
   });
 
-  $('#formdataMain').attr('value', main);
-  $('#formdataSub').attr('value', sub + 1);
   $('#btnSave').click(() => {
     const subTitle = $('#subTitle').val();
     const items = [];

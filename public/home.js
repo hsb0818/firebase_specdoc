@@ -10,6 +10,7 @@ $(document).ready(function() {
   console.log('firebase init completed!');
 
   auth = firebase.auth();
+  const rootRef = firebase.database().ref();
   const storageRef = firebase.storage().ref();
   const profile = storageRef.child('img/profile.jpg');
 
@@ -17,7 +18,6 @@ $(document).ready(function() {
     $('.img-profile').attr('src', url);
   });
 
-  const rootRef = firebase.database().ref();
   const subMain = $('#subMain');
   const categoryItems = {};
 
@@ -59,23 +59,27 @@ $(document).ready(function() {
         const items = docs[i].items;
         for (const j in items) {
           const item = $('<li></li>');
-          const href = $('<a></a>');
+          const itemsHref = $('<a></a>');
 
-          href.attr('href', '/document?main=' + i.toString() + '&sub=' + j.toString());
-          href.text(items[j].title);
+          itemsHref.attr('href', '/document?main=' + i.toString() + '&sub=' + j.toString());
+          itemsHref.text(items[j].title);
 
-          item.append(href);
+          item.append(itemsHref);
           ul.append(item);
+        }
 
-          if (isAdmin) {
-            const form = $('<form></form>');
-            form.attr('action', '/document');
-            form.attr('method', 'post');
-            form.append('<input type="hidden" name="main" value="' + i.toString() + '">');
-            form.append('<input type="hidden" name="sub" value="' + j.toString() + '">');
-            form.append('<button>modifying</button>');
-            form.insertBefore(href);
-          }
+        if (isAdmin) {
+          const form = $('<form></form>');
+          form.attr('action', '/document');
+          form.attr('method', 'post');
+          form.append('<input type="hidden" name="main" value="' + i.toString() + '">');
+          form.append('<input type="hidden" name="sub" value="' + items.length.toString() + '">');
+          form.append('<button>+</button>');
+          form.insertBefore(href);
+
+          const btnDel = $('<button>-</button>');
+          btnDel.insertBefore(href);
+          AddDeleteEvent(btnDel, i);
         }
 
         root.append(doc);
@@ -84,4 +88,15 @@ $(document).ready(function() {
       }
     });
   });
+
+  function AddDeleteEvent(jObj, delIdx) {
+    jObj.click((e) => {
+      if (confirm("you want deleting it?")) {
+        const delRef = rootRef.child('docs/' + delIdx.toString());
+        delRef.remove().then(() =>{
+          window.location.reload();
+        });
+      }
+    });
+  }
 });
