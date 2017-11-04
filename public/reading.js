@@ -72,9 +72,34 @@ $(document).ready(() => {
       navPageDiv.append('<a href=' + nextUrl + '0>Series Start</a>');
 
     function ImageSet(url) {
+      function PopUpImage(url, ext) {
+        const img = new Image();
+        img.src = url;
+        const winW = img.width * ext + 20;
+        const winH = img.height * ext + 30;
+
+        const newWin = $('<div></div>');
+        newWin.append('<title>Original Image</title>');
+
+        const imgItem = $('<img></img>');
+        imgItem.attr('src', url);
+        imgItem.attr('width', img.width * ext);
+        imgItem.attr('height', img.height * ext);
+        imgItem.attr('onclick', 'self.close();');
+
+        newWin.append(imgItem);
+
+        const OpenWindow = window.open('', '_blank', 'width=' + winW + ', height=' +
+          winH + ', menubars=no, scrollbars=auto');
+        OpenWindow.document.write($('<div>').append(newWin.clone()).html());
+      }
+
       const imgItem = $('<img>');
       imgItem.addClass('img-center');
       imgItem.attr('src', url);
+      imgItem.click((e) => {
+        PopUpImage(url, 1.5);
+      });
 
       const div = $('<div class="img-center-wraper"></div>');
       div.append(imgItem);
