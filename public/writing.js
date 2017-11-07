@@ -137,10 +137,10 @@ $(document).ready(() => {
       });
     }
 
+    let mainTitle = null;
     if (sub === 0) {
-      const mainTitle = $('#mainTitle').val();
+      mainTitle = $('#mainTitle').val();
       const mainContents = $('#mainContents').val();
-
       const rootData = {
         category: categoryList.val(),
         title: mainTitle,
@@ -163,7 +163,6 @@ $(document).ready(() => {
       };
 
       const query = 'docs/' + main.toString() + '/items/' + sub.toString();
-      console.log(query);
       rootRef.child(query).set(data);
     }
 
@@ -193,15 +192,23 @@ $(document).ready(() => {
       saver.text(per.toString());
     };
 
-    saveParent.removeClass('hide');
-    for (const key in imgList) {
-      for (const file of imgList[key]) {
-        const strRef = firebase.storage().ref(mainTitle + '/' + subTitle + '/' + file.name);
-        const task = strRef.put(file);
+    const query_main = 'docs/' + main.toString();
+    rootRef.child(query_main).once('value', (snap) => {
+      mainTitle = snap.val().title;
 
-        task.on('state_changed', null, null, completeFunc);
+      saveParent.removeClass('hide');
+      for (const key in imgList) {
+        for (const file of imgList[key]) {
+          const strRef = firebase.storage().ref(mainTitle + '/' + subTitle + '/' + file.name);
+          const task = strRef.put(file);
+          console.log(mainTitle + '/' + subTitle + '/' + file.name);
+          task.on('state_changed', null, null, completeFunc);
+        }
       }
-    }
+
+      console.log('snap : ' + mainTitle);
+    });
+
     console.log('save completed!!');
 
     setTimeout(() => {
