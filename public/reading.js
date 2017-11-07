@@ -12,12 +12,16 @@ $(document).ready(() => {
   const auth = firebase.auth();
   const rootRef = firebase.database().ref();
   const storageRef = firebase.storage().ref();
-  const pageRef = rootRef.child('docs/' + main.toString() + '/items/');
+  const docRef = rootRef.child('docs/' + main.toString());
   const subMain = $('#subMain');
+  let doc = null;
   let pages = null;
+  let mainTitle = "";
   let subTitle = "";
-  pageRef.once('value').then((snap) => {
-    pages = snap.val();
+  docRef.once('value').then((snap) => {
+    doc = snap.val();
+    pages = doc.items;
+    mainTitle = doc.title;
     subTitle = pages[sub].title;
     $('#subTitle').text(subTitle);
   })
@@ -122,7 +126,8 @@ $(document).ready(() => {
       if (imgs !== null) {
         const promises = [];
         for (const imgTitle of imgs) {
-          const img = storageRef.child(subTitle + '/' + imgTitle);
+          const img = storageRef.child(mainTitle + '/' + subTitle + '/' + imgTitle);
+//          console.log(mainTitle + '/' + subTitle + '/' + imgTitle);
           promises.push(img.getDownloadURL());
         }
 

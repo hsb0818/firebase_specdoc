@@ -33,32 +33,6 @@ $(document).ready(() => {
 
   const subMain = $('#subMain');
   let idx = 0;
-  /*
-  // if not writing
-  if (main >= 0) {
-    const pageRef = rootRef.child('docs/' + main.toString());
-    pageRef.once('value').then((snap) => {
-      const pages = snap.val();
-      if (sub === 0) {
-        $('#mainTitle').val(pages.title);
-        $('#mainContents').val(pages.contents);
-      }
-
-      const subTitle = pages.items[sub].title;
-      $('#subTitle').val();
-
-      const items = pages.items[sub].items;
-      for (const i in items) {
-        if (items[i].title.length === 0) {
-          AddContents(subMain, items[i].contents);
-        }
-        else {
-          AddItem(subMain, items[i].title, items[i].contents);
-        }
-      }
-    });
-  }
-  */
 
   $('#addItem').click(() => {
     AddItem(subMain);
@@ -179,6 +153,7 @@ $(document).ready(() => {
 
       rootRef.child('docs').once('value', (snap) => {
         rootRef.child('docs').child(snap.numChildren().toString()).set(rootData);
+        $('#formdataMain').attr('value', snap.numChildren());
       });
     }
     else {
@@ -187,12 +162,9 @@ $(document).ready(() => {
         items: items
       };
 
-      rootRef.child('docs').once('value', (snap) => {
-        const num = snap.numChildren() - 1;
-        const query = 'docs/' + num.toString() + '/items/' + sub.toString();
-        console.log(query);
-        rootRef.child(query).set(data);
-      });
+      const query = 'docs/' + main.toString() + '/items/' + sub.toString();
+      console.log(query);
+      rootRef.child(query).set(data);
     }
 
     let maxImgCount = 0;
@@ -224,7 +196,7 @@ $(document).ready(() => {
     saveParent.removeClass('hide');
     for (const key in imgList) {
       for (const file of imgList[key]) {
-        const strRef = firebase.storage().ref(subTitle + '/' + file.name);
+        const strRef = firebase.storage().ref(mainTitle + '/' + subTitle + '/' + file.name);
         const task = strRef.put(file);
 
         task.on('state_changed', null, null, completeFunc);
