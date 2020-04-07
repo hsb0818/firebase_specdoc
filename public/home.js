@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
   const firebaseConfig = {
     apiKey: "AIzaSyCsqZVYemoQGrQlK_mm6C6Cu9CrlYfSDjM",
     authDomain: "teraphonia.firebaseapp.com",
@@ -14,7 +14,7 @@ $(document).ready(function() {
   const storageRef = firebase.storage().ref();
   const profile = storageRef.child('img/profile.jpg');
 
-  profile.getDownloadURL().then(function(url) {
+  profile.getDownloadURL().then(function (url) {
     $('.img-profile').attr('src', url);
   });
 
@@ -93,7 +93,7 @@ $(document).ready(function() {
     jObj.click((e) => {
       if (confirm("you want deleting it?")) {
         const delRef = rootRef.child('docs/' + delIdx.toString());
-        delRef.remove().then(() =>{
+        delRef.remove().then(() => {
           window.location.reload();
         });
       }

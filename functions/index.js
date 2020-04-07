@@ -10,7 +10,7 @@ const functions = require('firebase-functions');
 const express = require('express');
 const app = express();
 
-const serviceAccount = require("./auth/serviceAccountKey.json");
+const serviceAccount = require("./serviceAccountKey.json");
 const fbRef = firebase.initializeApp({
   credential: firebase.credential.cert(serviceAccount),
   databaseURL: "https://teraphonia.firebaseio.com"
