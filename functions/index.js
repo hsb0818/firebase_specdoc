@@ -9,9 +9,6 @@ const firebase = require('firebase-admin');
 const functions = require('firebase-functions');
 const express = require('express');
 const app = express();
-const bodyParser = require('body-parser');
-const session = require('express-session');
-const ejs = require('ejs');
 
 const serviceAccount = require("./auth/serviceAccountKey.json");
 const fbRef = firebase.initializeApp({
@@ -77,22 +74,21 @@ app.post('/modifying', (req, res) => {
 });
 
 app.post('/login', (req, res) => {
-  if (req.body.hasOwnProperty('idToken') === false)
-  {
-    res.send(null);
+  if (req.body.hasOwnProperty('idToken') === false) {
+    res.status(401).send('Unauthorized');
     return;
   }
 
   const idToken = req.body.idToken;
   firebase.auth().verifyIdToken(idToken)
-  .then((decodedToken) => {
-    const uid = decodedToken.uid;
-    req.session.uid = uid;
-    res.send(req.session.uid);
-  })
-  .catch((error) => {
-    res.send(null);
-  });
+    .then((decodedToken) => {
+      const uid = decodedToken.uid;
+      req.session.uid = uid;
+      res.send(req.session.uid);
+    })
+    .catch((error) => {
+      res.send(null);
+    });
 });
 
 app.delete('/login', (req, res) => {

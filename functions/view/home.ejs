@@ -1,67 +1,69 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
-      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-      crossorigin="anonymous"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.1.1/firebase.js"></script>
-    <link rel="stylesheet/less" type="text/css" href="less/home.less" />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>
-  </head>
-  <body>
-    <script src="home.js"></script>
-    <div class="main">
-      <header>
-        <h1 class="title">Hello! I'm teraphonia.</h1>
-      </header>
 
-      <script>
-        var isAdmin = <%= isAdmin %>;
-      </script>
+<head>
+  <title><%= title %></title>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.1.1/firebase.js"></script>
+  <link rel="stylesheet/less" type="text/css" href="less/home.less" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>
+</head>
 
-      <%if (isAdmin === true) { %>
-        <button id="btnLogout">Log out</button>
-        <form action="/document" method="post" style="display:inline-block">
-          <input type="hidden" name="main" value="-1">
-          <input type="hidden" name="sub" value="0">
-          <button id="btnWriting">Writing</button>
-        </form>
-        <script>
-          $(document).ready(() => {
-            const btnLogout = $('#btnLogout');
-            btnLogout.click(() => {
-              firebase.auth().signOut();
+<body>
+  <script src="home.js"></script>
+  <div class="main">
+    <header>
+      <h1 class="title">Hello! I'm teraphonia.</h1>
+    </header>
 
-              $.ajax({
-                url: 'login',
-                data: null,
-                type: 'DELETE',
-                success: (data, status) => {
-                  window.location.reload();
-                }
-              });
-            });
+    <script>
+      var isAdmin = <%= isAdmin %>;
+    </script>
+
+    <%if (isAdmin === true) { %>
+    <button id="btnLogout">Log out</button>
+    <form action="/document" method="post" style="display:inline-block">
+      <input type="hidden" name="main" value="-1">
+      <input type="hidden" name="sub" value="0">
+      <button id="btnWriting">Writing</button>
+    </form>
+    <script>
+      $(document).ready(() => {
+        const btnLogout = $('#btnLogout');
+        btnLogout.click(() => {
+          firebase.auth().signOut();
+
+          $.ajax({
+            url: 'login',
+            data: null,
+            type: 'DELETE',
+            success: (data, status) => {
+              window.location.reload();
+            }
           });
-        </script>
-      <% } %>
+        });
+      });
+    </script>
+    <% } %>
 
+    <p>
+      <img class="img-profile" />
+    </p>
+    <div>
       <p>
-        <img class="img-profile"/>
+        안녕하세요. 홍성빈입니다.<br />
+        백엔드 개발자입니다. 지금까지 해 온 것들에 대한 정리 문서입니다.
       </p>
-      <div>
-        <p>
-          안녕하세요. 현재 동국대학교에 재학중인 학생입니다.<br />
-          네트워크 프로그래밍에 관심이 많아 주로 서버 프로그래밍을 하고 있지만, 관심이 생기면 가리지 않고 다 개발해 보고 있습니다.
-        </p>
-        <p>
-          email : hsb0818@gmail.com<br />
-          github : <a href="https://github.com/hsb0818" target="_blank">https://github.com/hsb0818</a><br />
-          blog : <a href="http://teraphonia.tistory.com" target="_blank">http://teraphonia.tistory.com</a>
-        </p>
-      </div>
-      <div id="subMain">
-      </div>
+      <p>
+        email : hsb0818@gmail.com<br />
+        github : <a href="https://github.com/hsb0818" target="_blank">https://github.com/hsb0818</a><br />
+        blog : <a href="http://teraphonia.tistory.com" target="_blank">http://teraphonia.tistory.com</a>
+      </p>
     </div>
-  </body>
+    <div id="subMain">
+    </div>
+  </div>
+</body>
+
 </html>
