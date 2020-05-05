@@ -1,0 +1,980 @@
+{
+  "__session" : {
+    "-gb5fUn0cQAv0tM2SyCZ2NXxtDRNTkki" : {
+      "expires" : 1588470650011,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"},\"myid\":\"hsb0818\"}",
+      "type" : "connect-session"
+    },
+    "-jDfkSz5wOKsrtLiqO4i6sme4mntqmjg" : {
+      "expires" : 1588140599410,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"}}",
+      "type" : "connect-session"
+    },
+    "091GDoi1_JgsnXP9Q50VAQoampkMA58D" : {
+      "expires" : 1588379080862,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"},\"myid\":\"hsb0818\"}",
+      "type" : "connect-session"
+    },
+    "0skEL6sw9FgBuNcjmC6RegZrcQqyprSa" : {
+      "expires" : 1587437688998,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"},\"myid\":\"hsb0818\"}",
+      "type" : "connect-session"
+    },
+    "5Gn2AFXfMKiJrymNQ9kzUxNXBjnw6HYd" : {
+      "expires" : 1588695833342,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"}}",
+      "type" : "connect-session"
+    },
+    "5Sp8osNPQY6jCq2xFRf3ePqoh9gbiDkA" : {
+      "expires" : 1587673103040,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"}}",
+      "type" : "connect-session"
+    },
+    "6-9wioUgE15mWofv9hQiyQQd4boRrYX5" : {
+      "expires" : 1587631726137,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"}}",
+      "type" : "connect-session"
+    },
+    "72IwwJWDDhJAK0ASlb58fhX0Y12tpqQd" : {
+      "expires" : 1588299650758,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"},\"myid\":\"hsb0818\"}",
+      "type" : "connect-session"
+    },
+    "7DMTIIfZ191k9-hdaYPbfge2rIINJRwF" : {
+      "expires" : 1588427589445,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"}}",
+      "type" : "connect-session"
+    },
+    "8jAg7IHnLRKiwjc1Pwr93LJYWooWfzQ-" : {
+      "expires" : 1587543915031,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"},\"myid\":\"hsb0818\"}",
+      "type" : "connect-session"
+    },
+    "8wDjAtNig6qwpAXer6AgArqhEKu3jDZR" : {
+      "expires" : 1588470609723,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"}}",
+      "type" : "connect-session"
+    },
+    "9_eKlyO7EdBofqAscDfPTSdxpoONMvBL" : {
+      "expires" : 1588695831904,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"},\"myid\":\"hsb0818\"}",
+      "type" : "connect-session"
+    },
+    "BOth77WkGVSlPynGbIMXymt5WOmoq0i8" : {
+      "expires" : 1588361498219,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"}}",
+      "type" : "connect-session"
+    },
+    "BfAKfKKTJaK6jb0EQy-EvLex-1VkbBhy" : {
+      "expires" : 1588717822445,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"},\"myid\":\"hsb0818\",\"uid\":\"FI1CUoAVFDen3pb0wQRxRw4aWjo1\"}",
+      "type" : "connect-session"
+    },
+    "BsxIDbD0MVec6lJufvd0BG-hp_u4xGaG" : {
+      "expires" : 1587887340712,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"},\"myid\":\"hsb0818\"}",
+      "type" : "connect-session"
+    },
+    "C2tc1fGwh2hnLgvT9WOeR-hB2ruLvglI" : {
+      "expires" : 1588066114524,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"},\"myid\":\"hsb0818\"}",
+      "type" : "connect-session"
+    },
+    "E22LPcEVPTxQeNEaJq4hgJCiLNnY5ope" : {
+      "expires" : 1588178051562,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"},\"myid\":\"hsb0818\"}",
+      "type" : "connect-session"
+    },
+    "EAm9Ai3RjUmLGqigQXAg9xsrM6R4Yxfu" : {
+      "expires" : 1587977483349,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"},\"myid\":\"hsb0818\"}",
+      "type" : "connect-session"
+    },
+    "EIxjxwbHSkelIH2KErw4FgRMM2wtAcyG" : {
+      "expires" : 1587398176944,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"}}",
+      "type" : "connect-session"
+    },
+    "F9i454Zmtc6gBZfeOpLqltsBLND03WVE" : {
+      "expires" : 1588675815424,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"}}",
+      "type" : "connect-session"
+    },
+    "FiZoze4fZrJjTLO5nuF9gnTmDhaUAutE" : {
+      "expires" : 1588195138959,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"}}",
+      "type" : "connect-session"
+    },
+    "GXConWBaAJNGaUhkdKEiszjyTkZLlt9j" : {
+      "expires" : 1587391140394,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"}}",
+      "type" : "connect-session"
+    },
+    "GvWLDtvCjjfpSsl-nf5yII-2s5YU8D6r" : {
+      "expires" : 1588249247530,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"}}",
+      "type" : "connect-session"
+    },
+    "IIhRyKNVm-89h0QfaIhUkDeOta1Wkr7q" : {
+      "expires" : 1588427584024,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"},\"myid\":\"hsb0818\"}",
+      "type" : "connect-session"
+    },
+    "J9a6Gr_7M0j0-H4wSTm6HUSkmYkWIs_f" : {
+      "expires" : 1588659258750,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"},\"myid\":\"hsb0818\"}",
+      "type" : "connect-session"
+    },
+    "JwG5emrQhiqaLVc671eaLHNrQCHhCjvg" : {
+      "expires" : 1587631727279,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"},\"myid\":\"hsb0818\"}",
+      "type" : "connect-session"
+    },
+    "LTFW9TYU88qMtS5pbdiSracSYNLG5aak" : {
+      "expires" : 1588351575520,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"},\"myid\":\"hsb0818\"}",
+      "type" : "connect-session"
+    },
+    "P_OzMX-8Vr8Tc7ss-mSxcZBYeHg1yzNx" : {
+      "expires" : 1588599090316,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"},\"myid\":\"hsb0818\"}",
+      "type" : "connect-session"
+    },
+    "Pge6Cjdx0EL8Vf7rb7CD-g2AQW4aPTrj" : {
+      "expires" : 1588225466448,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"}}",
+      "type" : "connect-session"
+    },
+    "PkpbdM13ltheF2O4y4Qxai9psqM2QEWM" : {
+      "expires" : 1587671297353,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"}}",
+      "type" : "connect-session"
+    },
+    "QNCwxBVQSGRggx1OKMHZVEjkb7E321E4" : {
+      "expires" : 1588215391219,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"}}",
+      "type" : "connect-session"
+    },
+    "WtWcE2U6B0UXarQuuVFRUc_lGb2bxt-a" : {
+      "expires" : 1588257428809,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"}}",
+      "type" : "connect-session"
+    },
+    "XYf-RZuaDOjneL5A1PGfSzJKNDcdUFTB" : {
+      "expires" : 1587582029465,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"},\"myid\":\"hsb0818\"}",
+      "type" : "connect-session"
+    },
+    "XdoA-dDuHzLHtG-wQspf10ZyjREbrUwS" : {
+      "expires" : 1587523064962,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"}}",
+      "type" : "connect-session"
+    },
+    "ZcPy2Gl3MPFzhPS_jEALKBihCfA2DQQ5" : {
+      "expires" : 1588178050213,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"}}",
+      "type" : "connect-session"
+    },
+    "ZsrEquXNIRAUP1cn8rK97mU6W0a7uHH7" : {
+      "expires" : 1588062600931,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"},\"myid\":\"hsb0818\"}",
+      "type" : "connect-session"
+    },
+    "a5GcA7nG2Kgc67NjCKBbgsmUUVvAqH_n" : {
+      "expires" : 1587648482436,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"},\"myid\":\"hsb0818\"}",
+      "type" : "connect-session"
+    },
+    "bF17Mm3jJsfaSRiBilVXZrmkptwKhzuX" : {
+      "expires" : 1588476101762,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"}}",
+      "type" : "connect-session"
+    },
+    "buVjGSC4SFLUkr3T2J8THsSsYczghoao" : {
+      "expires" : 1587990155116,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"}}",
+      "type" : "connect-session"
+    },
+    "c1AStfIG_VHTN1c14X-1Y8_vWLNP3X1G" : {
+      "expires" : 1587582028882,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"}}",
+      "type" : "connect-session"
+    },
+    "cBwhmZa5YJFMuCg7aDGoiaRe_gWUBgOE" : {
+      "expires" : 1587620522189,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"}}",
+      "type" : "connect-session"
+    },
+    "dDSq7KM2ze2E21B24eLNjrF3VSSEbDhr" : {
+      "expires" : 1588351574724,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"}}",
+      "type" : "connect-session"
+    },
+    "dOSV8kK5e0cU0gTiZrJA5zq7vbHHOVaf" : {
+      "expires" : 1588215392010,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"},\"myid\":\"hsb0818\"}",
+      "type" : "connect-session"
+    },
+    "hBqqLgluprC9j_bDODfwUDca3sHkZjSl" : {
+      "expires" : 1588361501124,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"}}",
+      "type" : "connect-session"
+    },
+    "hCf1fYfFRqUDTCUWrl_JggGGBKTtmTxG" : {
+      "expires" : 1587582035462,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"},\"myid\":\"hsb0818\"}",
+      "type" : "connect-session"
+    },
+    "hfdykt9t-TwVk3t3nU9Bv6OInO5TgFex" : {
+      "expires" : 1587673208044,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"}}",
+      "type" : "connect-session"
+    },
+    "jXKqQqK3wjmSwzJma0G-8QrpCbrXQDqJ" : {
+      "expires" : 1588427576912,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"},\"myid\":\"hsb0818\"}",
+      "type" : "connect-session"
+    },
+    "jY8Du1pVvuA-CYgyb-6E-LvunMxr2QYI" : {
+      "expires" : 1588625464766,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"}}",
+      "type" : "connect-session"
+    },
+    "klrpujCFBvJ1ADB3Js7_CsXfOcofx2WY" : {
+      "expires" : 1587582095938,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"}}",
+      "type" : "connect-session"
+    },
+    "m-3KmDkCQsS7zVo0vp_Wh84Uxtd0xnFw" : {
+      "expires" : 1588066114633,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"},\"myid\":\"hsb0818\"}",
+      "type" : "connect-session"
+    },
+    "mQ1v2avDAPlULptrLOQcooimJVTMHfR2" : {
+      "expires" : 1588361498829,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"},\"myid\":\"hsb0818\"}",
+      "type" : "connect-session"
+    },
+    "mc4FsN9IcEOzARmNUESc2QJSwWVHp9y7" : {
+      "expires" : 1587488131145,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"}}",
+      "type" : "connect-session"
+    },
+    "pE4CBIpfWnWDxzjIfPTnLZ22GhiKUSyY" : {
+      "expires" : 1588717448333,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"},\"myid\":\"hsb0818\"}",
+      "type" : "connect-session"
+    },
+    "qGOyKKF8KeGitQhRHjEbzDdykomPaqow" : {
+      "expires" : 1587391142432,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"}}",
+      "type" : "connect-session"
+    },
+    "qTNd-3D92emj3hWEvh0JKFDNSqQ0WdwE" : {
+      "expires" : 1588427576236,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"}}",
+      "type" : "connect-session"
+    },
+    "qdmXjHZfn4-C5F9A8ohAhGAiYVMgfziA" : {
+      "expires" : 1587773266338,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"}}",
+      "type" : "connect-session"
+    },
+    "rfUxDAKIWF-wo6mgdrxoSvs4-3sk1uHK" : {
+      "expires" : 1588687670120,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"},\"myid\":\"hsb0818\"}",
+      "type" : "connect-session"
+    },
+    "sQfbnTfDOYaVgrmoqqAilQrmIBgK_zY-" : {
+      "expires" : 1587543913267,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"}}",
+      "type" : "connect-session"
+    },
+    "sVf5RBCRMQhRt9CJngM3CDL8dB_ghP31" : {
+      "expires" : 1588584666591,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"},\"myid\":\"hsb0818\"}",
+      "type" : "connect-session"
+    },
+    "tcoNap9Tzan4ZAOtB13mN7h21HJ9zELM" : {
+      "expires" : 1587887340035,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"}}",
+      "type" : "connect-session"
+    },
+    "tj5cm9kspBRp0enTnEL99ixds5vHjKlo" : {
+      "expires" : 1588195201279,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"},\"myid\":\"hsb0818\"}",
+      "type" : "connect-session"
+    },
+    "vos0P038f_xiXKOjWNBWHP8XR2B--qBu" : {
+      "expires" : 1588675816827,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"},\"myid\":\"hsb0818\"}",
+      "type" : "connect-session"
+    },
+    "w0TNJgIOB9aKBZfOcNlBaK3kIe98cl_o" : {
+      "expires" : 1587311480372,
+      "sess" : "{\"cookie\":{\"originalMaxAge\":null,\"expires\":null,\"secure\":false,\"httpOnly\":true,\"path\":\"/\"},\"myid\":\"hsb0818\"}",
+      "type" : "connect-session"
+    }
+  },
+  "category" : [ "experience", "stack", "tech", "awards" ],
+  "docs" : [ {
+    "category" : "experience",
+    "contents" : "Spring / Oracle / Mybatis / Vue.js / JSP",
+    "items" : [ {
+      "contents" : "자세한 내용은 대외비입니다. / 네이버 웹툰의 새로운 앱인 '시리즈'를 위한 쿠키 및 이용권 사용 내역을 추적하기 위한 어드민 페이지들을 개발했습니다. \n대부분이 Jindo로 이루어져 있었던 페이지들이었는데, Vue.js를 이용해 새로운 페이지들을 개발했습니다.",
+      "title" : "CS 대응 툴 제작 : 결제 방식 종류별로 각각의 어드민 페이지 및 새로 진행하는 이벤트 어드민 페이지 개발"
+    } ],
+    "title" : "[2018.07.02 ~ 2018.08.24] Naver Webtoon Back-end 인턴"
+  }, {
+    "category" : "experience",
+    "contents" : "Node.js / Redis / MySQL / ubuntu / jmeter",
+    "items" : [ {
+      "items" : [ {
+        "contents" : "<a href=\"https://github.com/hsb0818/NaverHackday2018Summer_CookieServer\" target=\"_blank\">github 링크</a>",
+        "title" : "Github Site Link"
+      } ],
+      "title" : "초당 1만번 요청에도 끄떡없는 선착순 쿠키 발급 시스템 서버 개발"
+    } ],
+    "title" : "[2018.05.17 ~ 2018.05.18] 2018 Naver Campus Hackday summer"
+  }, {
+    "category" : "experience",
+    "contents" : "Spring / Mysql / Ubuntu",
+    "items" : [ {
+      "items" : [ {
+        "contents" : "<a href=\"https://github.com/hsb0818/NaverHackday2017Winter_Ranking_System\" target=\"_blank\">https://github.com/hsb0818/NaverHackday2017Winter_Ranking_System</a>",
+        "title" : "Github Site Link"
+      } ],
+      "title" : "댓글 증감수 기반 콘텐츠 랭킹 시스템 개발"
+    } ],
+    "title" : "[2017.11.23 ~ 2017.11.24] NAVER CAMPUS HACKDAY 2017 winter"
+  }, {
+    "category" : "experience",
+    "contents" : "IOT(by zigbee) / Windows C++ Server & Client / Unity / Node.js Server / Postgresql / SDL / OpenGL",
+    "items" : [ {
+      "items" : [ {
+        "contents" : "원격지 PC에서 로봇 PC에 접속해 TCP 기반의 통신을 하며, 원격지 PC에서 로봇의 목관절 / 이동 등을 조작할 수 있다.\n",
+        "imgs" : [ "Move Scenario.png" ],
+        "title" : "Networking between remote server and client"
+      }, {
+        "contents" : "다음은 통신 로깅 화면이다.",
+        "imgs" : [ "서버 클라이언트 로그.png" ],
+        "title" : ""
+      }, {
+        "contents" : "유저의 ID/ Password/ IP/ Port를 관리하는 간단한 서버를 만들었다.\n",
+        "imgs" : [ "db nodejs.png" ],
+        "title" : "User management & Node.js and Postgresql database"
+      }, {
+        "contents" : "Innolink라는 회사의 zstick이라는 zigbee 기반 IOT 전등 모델을 로봇에 부착해 원격지 PC에서 로봇을 통해 이를 조작할 수 있도록 하였다.",
+        "imgs" : [ "zigbee.png" ],
+        "title" : "IOT by zigbee"
+      }, {
+        "contents" : "문제가 생겼었다. 원격지 PC와 로봇 PC는 잘 동작하는데, Android Tablet과 로봇 PC가 통신할 때에는 데이터가 이상하게 송수신되는 것이었다. 이를 해결하기 위해 수신 패킷의 Byte를 확인해 보았더니, Endian에 관한 문제였다. 로봇 PC는 Intel계열 CPU이며 little endian 방식을 사용하고 있었고, Android Java에서는 big endian 방식을 사용하고 있었다. 그래서 이를 변환하는 작업을 수행해 문제를 해결하였다. 다음은 태블릿과 로봇 PC를\n 연동하는 사진이다.\n",
+        "imgs" : [ "tablet 연동.jpg" ],
+        "title" : "Networking between Android Tablet and Robot(about Endian conversion)"
+      }, {
+        "contents" : "Oculus에서 로봇에 부착되어 있는 360도 카메라로부터 수신된 사진을 보여주는 프로그램을 개발했다. 우선 구 형태의 모델을 생성해 사진을 맵핑하고, 자유모드에서는 Oculus의 각도와 연동시켜 바라보는 곳으로 회전 처리를 하도록 구현했고, Leapmotion 이용 모드에서는 Graphics 수업 때 배웠던 Arcball을 구현하여 적용시켰다. 다음은 그렇게 구현된 360도 뷰어이다. 화면이 2개인 것은 oculus가 stereo방식이기 때문에, 그에 맞춰 출력한 것이다. ",
+        "imgs" : [ "170617_360camera1.png", "170626_oculus_360cam_pic2.jpg" ],
+        "title" : "360 Camera viewer on Oculus"
+      }, {
+        "contents" : "OpenGL과 SDL Library를 이용해 UI 시스템을 구성하였다. Oculus 화면은 Stereo 방식으로 양 쪽 눈에 보여줘야 하기 때문에 화면을 절반 크기로 재구성해 보여주어야 하는 번거로움이 있었다. Zed Camera를 이용하면 2장의 이미지가 합쳐진 형태로 같이 오기 때문에, 따로 처리해 줄 필요가 없어진다. 그래서 [Zed Camera 이미지 + UI 화면 절반크기로 만든 것을 2장 합친 이미지] 처리를 해 줌으로 해결할 수 있었다. 다음은 그 사진이다.",
+        "imgs" : [ "stereo.png" ],
+        "title" : "Oculus UI and Zedcamera"
+      } ],
+      "title" : "Telepresence Robot (Oculus / Leapmotion / zigbee torch / 360 Camera / Zed Camera)"
+    }, {
+      "items" : [ {
+        "contents" : "Myo 장비를 forearm / upperarm에 장착하고, 각 근육의 8방향 Emg신호를 블루투스 기반 통신으로 Windows PC의 Unity와 통신한다. Unity에서 Myo와 통신하며 전송받은 8방향 Emg신호를 그래프로 보여준다. 다음은 순서대로 Aduction 모션과 Flexion 모션에 대한 그래프 사진이다.",
+        "imgs" : [ "aduction.PNG", "flexion.PNG" ],
+        "title" : "Signal Graph system"
+      }, {
+        "contents" : "이 신호들을 K-Means Clustering을 이용해 각각을 그룹화.. 시켜 보았다. 이미 8개 신호로 그룹화 되어 있는 데이터를 각각 그룹화하는 것이 딱히 의미 있는 것은 아니지만 그냥 해 보았다. 다음은 그 결과를 보여준다. 자세히 봤을 때 있는 작은 점들은 그룹의 중심을 의미한다.",
+        "imgs" : [ "kmeans of emg signal.PNG" ],
+        "title" : "K-Means Clustering"
+      } ],
+      "title" : "Myo emg data visualization (Unity)"
+    }, {
+      "items" : [ {
+        "contents" : "대회에 나가는 고등학생들에게 멘토링을 해 주는 프로젝트였다.\n라즈베리파이에 원격으로 지도 정보를 입력하면 AStar 기반으로 목적지를 찾아간다. 중간에 장애물을 만나면 정적 장애물/동적 장애물 검사를 진행하고, 그에 따라 다른 길을 선택해 이동하며 길찾기 알고리즘을 다시 진행하는 식으로 목적지까지 이동한다. 이동은 Line Tracing을 이용한다.\n\n우선, Arduino와 Raspberry PI 중 선택해야 했다. 둘 중 뭘 사용해야 할까? 이 프로젝트는 길찾기 알고리즘을 기반으로 하는 프로젝트이다. 계산량이 많아질 수 있다. 그리고 Arduino의 RAM은 2KB밖에 되지 않는다. 그래서 Arduino보다는 Raspberry PI를 이용하는 것이 좋을 것이라 판단했다.",
+        "title" : "Introduce"
+      }, {
+        "contents" : "재료는 다음과 같다.\n - Raspberry PI 3\n - MicroSD Card (Raspberry PI 3의 하드 디스크)\n - 모터 드라이버 (모터의 순방향/역방향 회전 제어를 위해)\n - DC 모터 4개(바퀴 4개 제어를 위해)\n - 적외선 센서 3개 (LineTracing을 위해)\n - 초음파 센서 (장애물 감지를 위해)\n - 바퀴 4개\n - 보조배터리(Raspberry PI에 전원을 공급하기 위해)\n - 배터리 커넥터 AA 건전지 6개용\n - AA건전지 에너자이저 6개(3팩)\n - 미니카 뼈대\n - 미니 브레드보드\n - 점퍼 케이블 3가지 종류별로 여러개\n + ssh 원격 접속을 위한 노트북\n\n다음 사진은 재료들이다. 위의 재료가 필요했는데 이 모든 게 들어 있는 제품이 있어 구매했고, 저 중에 카메라는 사용될 수도 있을 것 같았으나 사용하지 않았다. 업체 자체에서 제공한 쉴드는 사용하지 않았다.",
+        "imgs" : [ "20170821_125414.jpg" ],
+        "title" : "Preparation"
+      }, {
+        "contents" : "일단 조립을 먼저 진행하도록 했다.",
+        "imgs" : [ "20170821_204645.jpg", "20170821_215335.jpg", "20170825_133241.jpg", "20170825_145726.jpg", "수정됨_20170824_212944.jpg" ],
+        "title" : "조립"
+      }, {
+        "contents" : "다행히 학생들이 C언어를 공부했던 학생들이었기에 멘토링하기에 편했다.\n\n1) MicroSD card에 Raspbian OS 탑재를 한다.\n2) Raspberry PI3에 일단은 직접 모니터(hdmi 케이블), 키보드 연결\n3) 특정 Wifi 접속하도록 Wifi의 ID와 비밀번호 세팅\n4) ssh를 이용하여 원격 작업을 하기 위해 고정IP 할당시킴(이는 공유기로도 특정 MAC 주소에 고정으로 IP 할당하도록 해도 된다.)\n5) git에서 wiringPi 라이브러리를 받아 사용한다.",
+        "title" : "Development"
+      }, {
+        "contents" : "",
+        "title" : ""
+      }, {
+        "contents" : "1. 모터 방향이 완벽하게 평행이 아니기 때문에 완벽한 직진 불가능\n => 때문에 라인트레이싱 이용\n2. 초음파 / 적외선 센서는 출력 시 10ms 정도 기다린 후 수신값 체크해야 제대로 동작\n3. 적외선 센서는 스위치로 거리 조절을 하는데, 이 값을 잘 설정해야 했다. 안 그러면 인식이 안 된다...\n4. 맵 이동하며 좌/우회전 시, 원하는 각도만큼 정확히 회전 불가능. \n => 같이 고민하여 나온 약간의 창의적인 해결책 활용 : Line tracing을 하다가 3개 적외선 센서 모두에서 흰색 값이 감지되면 '대략' 50도 회전하도록 한 후 라인이 발견될 때 까지 직진한다. 그럼 그 라인을 타고 다음 위치로 이동하게 된다...는 생각이었고, 이는 정확히 동작하였다. 심지어 더 실제 자동차같은, 자연스러운 이동이었음.",
+        "imgs" : [ "해결.PNG" ],
+        "title" : "Problem"
+      }, {
+        "contents" : "GPIO pin 번호를 잘 확인하여 개발해야 했는데, Raspberry PI3 GPIO pin 표를 보면서 하면 된다고 알려줬다가.. 작동이 안 되고 있길래 생각해 보니 wiringPi 라이브러리를 이용할 때는 wiringPi pin 표를 보며 개발해야 했다. 다음 그림이 wiringPi pin 표이다. (출처 : <a href=\"https://pinout.xyz/pinout/wiringpi\" target=\"_blank\">wiringPi 표(새 페이지로 열림)</a>",
+        "imgs" : [ "dsaf.PNG" ],
+        "title" : ""
+      }, {
+        "contents" : "장애물 회피를.... 사실 장애물이 나타났을 때 큰 범위로 움직여 버리면 실제로는 오히려 더 큰 사고가 나지 않을까... 하는 생각인데.. 학생들도 그렇게 생각하여 어떻게 진행할지 고민하고 다음과 같은 시나리오로 결정했다.\n\n초음파 센서를 차량 전방에 배치했다. 그래서 일정 거리에 장애물이 등장하는지 확인이 가능하다. 장애물 발견 시 5초간 기다려 본 후, 그대로 장애물이 있다면 정적 장애물로 인식하고, 현재 경로를 삭제한 후에 이전 위치로 이동한다. 그리고 다시 길찾기 알고리즘을 적용하여 목적지까지 가는 최단경로를 구한다. 장애물 발견 시 5초 후에 다시 장애물 체크를 했는데 장애물이 없다면 동적 장애물로 인식하고 그대로 원래 가던 길을 간다.\n\n는 시나리오.",
+        "title" : "장애물 회피(정적 / 동적 장애물)"
+      }, {
+        "contents" : "Map은 폼보드를 대량 구매해 이어붙이는 식으로 제작했다. 대략 3M X 3M 크기의 Line Tracing이 가능한 Map을 만들도록 했다.",
+        "imgs" : [ "m1.jpg", "m2.jpg", "m3.jpg" ],
+        "title" : "Map"
+      }, {
+        "contents" : "마지막 사진의 상자는 정적 장애물이다.",
+        "title" : ""
+      }, {
+        "contents" : "1) 출발\n2) 정적 장애물 만남\n3) 뒤로 이동\n4) 현재 이동했던 길을 메모리에서 지우고 길찾기 알고리즘 재적용 후 이동\n5) 목적지 도착",
+        "imgs" : [ "최종1.PNG", "만남.PNG", "뒤로이동.PNG", "길찾기 시도.PNG", "목적지도착.PNG" ],
+        "title" : "결과 사진"
+      }, {
+        "contents" : "아무래도 카메라와 GPS 같은 것을 사용하지 않고 개발하기 때문에 수준이 높지는 않은 프로젝트였다. 그렇지만 고등학생들 가르쳐 주는 게 생각보다 재밌었다.",
+        "title" : "Summary"
+      } ],
+      "title" : "[고등학생 멘토링 프로젝트] 길찾기 기반의 자율주행 미니카 개발(Raspberry PI 3)"
+    } ],
+    "title" : "[2017.02.11 ~ 2017.09.31] 동국대학교 NUI/NUX 연구실"
+  }, {
+    "category" : "experience",
+    "contents" : "CCTV, Light(가로등 같은) 설치 위치와 순찰 경로 설정에 따른 가시도/차폐도 계산 및 시뮬레이션 프로그램",
+    "items" : [ {
+      "items" : [ {
+        "contents" : "한국전통문화대학교에서 외주 연락을 받아 개발하였다. CCTV와 Light를 어디에 설치하는 게 가장 효율적일지 최대한 겹치지 않는 위치를 알 수 있도록 시각화하고, 결과 데이터를 엑셀 파일로 추출해 준다. 만약 경비원의 이동 경로를 설정하게 되면 그에 대한 CCTV 위치 최적화도 진행한다. 이는 친구와 2인으로 개발하였다.",
+        "title" : "Introduce"
+      }, {
+        "contents" : "- .obj 파일로부터 실제 지역의 3D 데이터(Vertex, Index, face 등의 정보)를 불러와 로딩해 주는 기능\n- 사람이 갈 수 있는 곳 / 갈 수 없는 곳 구분해 주는 기능(사람의 키를 설정하여 판단 가능하도록 함)\n- CCTV 위치와 Light(Point Light) 위치와 형태(aspect, fov 등 범위 정보)를 설정(위치 설정은 TopView 시점으로 일정 간격으로 격자 형태로 보여주고, 선택 가능)\n- 경비원 순찰 경로 설정(시야 범위 설정 가능)\n- 가시도(CCTV와 경비원의 시야 범위로부터 어떤 부분이 얼마나 잘 보이는지)\n- 차폐도(CCTV와 경비원의 시야 범위로부터 어떤 부분이 얼마나 가려지는지)\n- 모든 데이터를 엑셀 파일로 추출\n- Unity에서 File Dialog 사용할 수 있도록 windows C++ dll 파일 작성 후 Unity에 import\n- 등등..",
+        "imgs" : [ "사진모드.PNG" ],
+        "title" : "Features"
+      } ],
+      "title" : "Optimize CCTV Location In Real World"
+    }, {
+      "items" : [ {
+        "contents" : "360도 형태의 CCTV 적용 모습",
+        "title" : "Screenshot"
+      }, {
+        "contents" : "",
+        "imgs" : [ "1.PNG" ],
+        "title" : ""
+      }, {
+        "contents" : "순찰 경로 지정 모습. 1번째 그림처럼 그려 주면 2번째 3번째처럼 순찰 시야 범위가 생성된다.",
+        "imgs" : [ "거리에 따라 길 찍기.PNG", "2path.PNG", "최종결과.PNG" ],
+        "title" : ""
+      }, {
+        "contents" : "다음 사진은 시각화와 차폐도에 관한 사진이다.",
+        "imgs" : [ "시각화 top view.PNG", "차폐도ㅓ.PNG" ],
+        "title" : ""
+      }, {
+        "contents" : "이렇게 보여 주고, 색깔도 설정할 수 있다.",
+        "imgs" : [ "colorsetting.PNG" ],
+        "title" : ""
+      }, {
+        "contents" : "이렇게 해서 모든 CCTV와 Light, 순찰 범위에 대한 계산을 완료하면 엑셀 파일로 추출해 준다.",
+        "imgs" : [ "excel.PNG" ],
+        "title" : ""
+      }, {
+        "contents" : "굉장히 많은 작업량이었다. 그래도 재미있었다.",
+        "title" : ""
+      } ],
+      "title" : "Development"
+    } ],
+    "title" : "[2016년 - 외주 개발] CCTV 감시 범위와 순찰 경로의 최적 위치 시뮬레이션 프로그램(Unity, LinQ)"
+  }, {
+    "category" : "experience",
+    "contents" : "군대에서 조교로 일할 때 개발했던 교육생 대상 레이더 모의 훈련 프로그램(Flash 이용) 개발",
+    "items" : [ {
+      "items" : [ {
+        "contents" : "병 / 간부 교육생을 가르치기 위한 레이더 장비의 수가 1대밖에 없었다. 시간대비 효율이 너무 좋지 않았다. 곰곰히 생각해 보던 중 평소 교육생들이 쉬곤 하던 대기실의 수많은 컴퓨터가 사용되지 않고 있음을 인지하고, 약 6개월간 틈틈이 Flash를 이용하여(군에서 사용 가능한 프로그램이 Flash밖에 없었다..) 실제 레이더 장비와 거의 흡사한 시스템의 모의 훈련 프로그램을 개발하여 실제 교육에 적용하였다.",
+        "title" : "문제"
+      }, {
+        "contents" : "이전에는 실제 장비로 훈련하기 전에 대기실에서 대기하면서 책을 이용해 교육했는데, 모의 훈련 프로그램을 사용해 장비를 조작하도록 교육하게 되었다. 이로 인해 실제 장비를 사용함에 있어 더 쉽고 빠르게 파악하고 훈련할 수 있게 되었다. \n",
+        "title" : "모의 훈련 프로그램을 적용한 결과"
+      }, {
+        "contents" : "이렇게 열심히 했지만.,., 포상을 받지 못했다는 슬픈 이야기.,.",
+        "title" : "프로그램은 군 보안에 의해 가져올 수 없었다."
+      } ],
+      "title" : "1대 밖에 없는 장비, 많은 교육생"
+    } ],
+    "title" : "[2015.05. ~ 2016.04.][군 복무 당시] 군용 레이더 모의 훈련 프로그램"
+  }, {
+    "category" : "experience",
+    "contents" : "리눅스 오픈소스 성능개선 프로젝트 : Redis",
+    "items" : [ {
+      "items" : [ {
+        "contents" : "주로 메모리 관리에 대한 주제로 코드를 분석했다. Redis는 memory 관리를 할 때 jemalloc을 사용한다고 하는데, 이는 멀티스레드 기반 환경에서 메모리 생성/해제가 빈번한 프로젝트에 적합한 메모리 할당자이다. jemalloc은 Facebook, Firefox 등에 사용된다고 하는데, Google의 tcmalloc과 같은 역할을 하고 둘 간의 성능 차이는 없다. 하지만 tcmalloc은 구글에서 만든 다양한 프로그램 분석 툴(Heap profiler, Cpu profiler 등)이 제공되므로\n 더 편하게 개발할 수 있다. 그래서 tcmalloc에 대해 분석하고 알아보았다. 그 구조에 대해 그림으로 직접 나타내 보았다. 자세한 내용은 추후 시간 날 때 정리해서 올리도록 하겠다.",
+        "imgs" : [ "tcmalloc0.PNG", "tcmalloc1.png" ],
+        "title" : "Memory Allocator"
+      } ],
+      "title" : "Redis 코드 분석 : Memory Allocator"
+    } ],
+    "title" : "[2013.07 ~ 2013.11] Software Maestro 4기 연수생"
+  }, {
+    "category" : "experience",
+    "contents" : "랜덤으로 주어지는 카드를 활용해 상대 소환사의 몬스터와 기지를 격파하는 2D 전략 게임이다.",
+    "items" : [ {
+      "items" : [ {
+        "contents" : "고등학생 때 유희왕 카드게임 하다가 급 만든 게임. 온라인으로 만들고 싶었지만 이 때는 참.. 아쉽게도 기술이 없었다.",
+        "imgs" : [ "1.PNG", "2.PNG", "3.PNG" ],
+        "title" : "Introduce"
+      }, {
+        "contents" : "<a href=\"https://www.youtube.com/watch?v=Akv1sNzy15c\" target=\"_blank\">https://www.youtube.com/watch?v=Akv1sNzy15c</a>",
+        "title" : ""
+      } ],
+      "title" : "Youtube and Screenshot"
+    } ],
+    "title" : "[2010년 개발] 배틀 게이트(DirectX, C++)"
+  }, {
+    "category" : "experience",
+    "contents" : "오투잼이나 DJMAX와 같은 형식의 평범한 리듬 게임을 만들어 보았다.",
+    "items" : [ {
+      "items" : [ {
+        "contents" : "고등학생 때 요조 라는 가수의 팬이었는데, 이 때 카페 활동하다가 갑자기 팬게임으로 리듬게임 개발하고 싶어져서 만들게 되었다. 하지만 수시 준비해야 해서 완성까지 하지는 못했다.",
+        "imgs" : [ "0.PNG", "1.PNG" ],
+        "title" : "Introduce"
+      }, {
+        "contents" : "<a href=\"https://www.youtube.com/watch?v=7gELeUbnX9I&t=1s\" target=\"_blank\">https://www.youtube.com/watch?v=7gELeUbnX9I&t=1s</a>",
+        "title" : ""
+      } ],
+      "title" : "Youtube and Screenshot"
+    } ],
+    "title" : "[2010년 개발] 리듬 게임 제작(DirectX, C++)"
+  }, {
+    "category" : "experience",
+    "contents" : "고등학생 때 개발했던 2D 퍼즐 액션 게임이다.",
+    "items" : [ {
+      "items" : [ {
+        "contents" : "처음 만들어 본 게임. 정말 즐거웠다.",
+        "imgs" : [ "1.PNG", "2.PNG", "3.PNG", "4.PNG" ],
+        "title" : "Introduce"
+      }, {
+        "contents" : "Trailer - <a href=\"https://www.youtube.com/watch?v=x6xK2mMJf74\" target=\"_blank\">https://www.youtube.com/watch?v=x6xK2mMJf74</a><br>In Game - <a href=\"https://www.youtube.com/watch?v=tDxBJNGcNvE\" target=\"_blank\">https://www.youtube.com/watch?v=tDxBJNGcNvE</a>",
+        "title" : ""
+      } ],
+      "title" : "Youtube and Screenshot"
+    } ],
+    "title" : "[2009년 개발] 메테오 스토리(DirectX, C++)"
+  }, {
+    "category" : "stack",
+    "contents" : "",
+    "items" : [ {
+      "title" : "Javascript, C/C++, Java, C#, php"
+    } ],
+    "title" : "Languages"
+  }, {
+    "category" : "stack",
+    "contents" : "",
+    "items" : [ {
+      "title" : "Node.js, React.js, Jest, Spring, CodeIgniter, Unity, DirectX, Phaser.js"
+    } ],
+    "title" : "Framework"
+  }, {
+    "category" : "stack",
+    "contents" : "",
+    "items" : [ {
+      "title" : "MySQL / Postgresql / Oracle / Redis"
+    } ],
+    "title" : "Database"
+  }, {
+    "category" : "stack",
+    "contents" : "",
+    "items" : [ {
+      "title" : "Linux(ubuntu) / Windows / Android / Arduino / Raspberry PI"
+    } ],
+    "title" : "Platform"
+  }, {
+    "category" : "stack",
+    "contents" : "",
+    "items" : [ {
+      "title" : "Terraform"
+    } ],
+    "title" : "Infra Tool"
+  }, {
+    "category" : "stack",
+    "contents" : "",
+    "items" : [ {
+      "title" : "JLPT 2급(251/400)"
+    } ],
+    "title" : "Certificated License"
+  }, {
+    "category" : "tech",
+    "contents" : "[2017.09.01 ~ 2018.03.07] 해킹을 무력화시키기 위해 Server-Side에서 중요한 처리를 담당하는 방식의 Server",
+    "items" : [ {
+      "items" : [ {
+        "contents" : "이 문서는 Gabriel Gambetta(http://www.gabrielgambetta.com/client-server-game-architecture.html by Gabriel Gambetta)의 논문을 참고하여 작성된 문서이다. \n이 문서는 클라이언트 측 해킹을 근본적으로 해결하기 위한 서버인 Authoritative 서버와 클라이언트 개발을 다룬다. Authoritative한 게임 서버는 게임 세계에 영향을 미치는 유저들의 행동 하나하나에 대한 정보를 검증하는 서버이다.",
+        "title" : "Introduction"
+      }, {
+        "contents" : " 문제는 보안에서 시작된다. 서버는 기본적으로 클라이언트를 신뢰하지 않아야 한다. 예를 들어, A, B 유저가 배틀그라운드를 즐기고 있다. A는 핵을 사용하여 자신의 '클라이언트'에서 B의 위치를 자신의 바로 앞으로 변경하였고, 후라이팬으로 때려 죽였다. 한 편, B는 열심히 파밍하던 중 갑작스럽게 죽게 되었다. 어떤 일이 있었던 것일까?\n 서버에서는 A와 B의 위치를 수신받고, 각 클라이언트에 서로의 위치를 갱신해 줄 것이다. A가 사용한 핵이 서버로부터 B의 위치 정보를 받아 갱신하는 코드를 무시하는 기능을 가지고 있고, B의 위치를 임의로 변경할 수 있도록 구현되어 있는 핵이라면 A의 입장에서 B의 위치를 마음대로 조절하지만 B의 입장에서는 정상적인 게임 플레이를 하고 있는 상황이 된다. 그런 후에 A는 B에게 데미지를 입혔다. 이 정보는 A의 '클라이언트'에서 서버로 전송된다. 이 때, 만약 물리적인 충돌 처리를 클라이언트가 담당하도록 했고, '누가 어떤 무기로 누구에게 데미지를 입혔다 ' 와 같은 정보가 수신된 순간 별 다른 의심 없이 정보를 신뢰하도록 구현된 서버라면 위와 같은 상황이 발생하는 것이다.\n Authoritative한 서버를 만들게 되면 이를 해결할 수 있게 되는 만큼 서버 자원을 많이 필요하게 된다. 서버 자원은 비용 등의 이유로 한정적이기 때문에 연산량이 높은 물리 처리 같은 것들을 서버가 담당하도록 할 수 없는 환경이 많을 것이다. 그래서 그런 처리를 Client에 맡기다 보니 실제로 여러 게임들에서 Client 해킹을 해도 쉽게 막을 수 없는 경우가 생기는 것이다.",
+        "title" : "Client Hacking and Problem"
+      }, {
+        "contents" : "다음 그림은 간단한 Authoritative 서버와 클라이언트 관계를 보여준다.",
+        "imgs" : [ "fpm1-01.png" ],
+        "title" : "Simple Solution"
+      }, {
+        "contents" : "0) 서버와 클라이언트 양 쪽에서 위치정보를 관리한다.\n1) 클라이언트는 p(10, 10) 위치에서 서버로 '오른쪽으로' 라는 정보를 전송한다.\n2) 서버에서는 이를 수신받아 적용시키고, 현재 p의 위치인 (11, 10)을 전송한다.\n3) 클라이언트에서는 서버로부터 수신받은 p(11, 10)으로 위치를 갱신한다.\n\n이게 Authoritative 서버의 기본 개념이다. 하지만 이런 식으로 처리하다간 네트워크 Round Trip Time(RTT: 패킷 왕복 시간)에 따라 클라이언트들에 대한 처리가 진행되어 버린다. 즉, 게임을 하는데 인터넷이 느린 쪽이 불리한 상황이 발생한다는 것이다. 그리고 유저가 이동을 하려면 RTT가 지난 후에 위치가 갱신되기 때문에, 툭툭 끊기게 되는 현상이 발생하게 된다. 다음 장에서는 이것을 해결하기 위해 'Client-Side Prediction and Server Reconciliation' 알고리즘을 구현할 것이다.",
+        "title" : ""
+      } ],
+      "title" : "Authoritative Server Game Architecture"
+    }, {
+      "items" : [ {
+        "contents" : "이전 장에서, 서버에 입력을 보낸 후 서버에서 다시 돌아오는 패킷을 받아 위치(상태)를 갱신하는 네트워크 구성을 알아보았다. 이전 장의 마지막에서도 언급했듯이, 단순하게 구현하면 클라이언트 입력 -> 서버 계산 -> 서버 상태 전송 -> 클라이언트 갱신 의 단계를 거쳐야 하기 때문에 지연이 발생하게 된다. 다음 그림은 RTT 값이 100ms인 네트워크 환경에서의 지연을 보여 준다.",
+        "imgs" : [ "fpm2-01.png" ],
+        "title" : "Introduction"
+      }, {
+        "contents" : "위의 서버-클라이언트 구현의 문제는 클라이언트에서 자신의 캐릭터를 조작하면 일단 서버로부터 데이터를 수신받기까지의 지연이 발생한다는 것이었는데, Client-Side Prediction 알고리즘을 적용하자. 이 알고리즘은 '클라이언트 입력이 발생하면 일단 적용하자'는 방식이다. 그렇게 하면 일단은 유저 경험이 조금은 나아지게 된다. 다음 그림을 보자.\n",
+        "imgs" : [ "fpm2-03.png" ],
+        "title" : "Client-Side Prediction"
+      }, {
+        "contents" : "클라이언트에서 입력을 보냄과 동시에 움직이고 있다. 그리고 100ms 후에 서버로부터 받은 정보로 갱신한다. 이렇게 하면 조금은 유저 경험이 나아지지만, 문제가 발생한다. 다음 그림을 보자.",
+        "imgs" : [ "fpm2-04.png" ],
+        "title" : ""
+      }, {
+        "contents" : "RTT가 250ms인 네트워크 환경이다.\n\n여기서 빨간색 p 부분을 보자. 이전에 p(10, 10)일 때 전송했던 패킷의 응답이 RTT만큼 지연된 후의 상황이다. 이전 구현에서 유저가 즉시 움직일 수 있도록 했기 때문에, p는 이미 200ms만에 (12, 10)까지 움직였다가 250ms 전에 전송했던 정보에 대한 응답이 도착하여 다시 (11, 10)으로 갱신된 것이다. 그리고 다시 100ms 후에 p(12, 10) 데이터를 수신받고 갱신한다. 이는 유저 경험에 좋지 않다. 이를 완화시키기 위해 다음 장에서는 \n'Server reconciliation' 알고리즘을 적용시킬 것이다.",
+        "title" : ""
+      } ],
+      "title" : "Client-Side Prediction and Server Reconciliation"
+    }, {
+      "items" : [ {
+        "contents" : "이전 장까지는 서버와 클라이언트 자신 간의 처리에 대해서만 신경을 썼다. 이제 다른 Player에 대한 처리에 대해 다루어야 한다.",
+        "title" : "Introduce"
+      }, {
+        "contents" : "서버에서 클라이언트로부터 수신받는 패킷에 대한 처리를 그 순간마다 즉각적으로 하게 되면, 순간적으로 대량의 패킷을 전송받았을 때 서버에서는 다른 일을 처리하지 못하는 상황이 발생한다. 이것을 방지하기 위해 패킷 처리를 담아두기 위한 Queue를 만들고 패킷을 수신할 때마다 저장한다. 그리고 이 Queue에 대한 일괄처리를 일정 주기마다 진행하는데, 이를 Server Time Step이라 한다. 예를 들어, 초당 10회(100ms)라 지정한다면 100ms가 Server Time Step이다. Queue를 일괄처리하는데 Server Time Step이상의 시간이 걸린다면, 다음 Server Time Step에서 남은 처리부터 진행한다.\n 이렇게 처리를 하고 적용된 상태를 다시 클라이언트들에게 Broadcast한다. 이 알고리즘을 적용하게 되면 클라이언트로부터의 패킷 양 같은 서버에 부하를 주는 요소로부터 독립적으로 게임 세계를 관리할 수 있다. 즉, 예측 가능한 상태를 다룰 수 있게 된 것이다.",
+        "title" : "Server Time Step"
+      }, {
+        "contents" : "이렇게 낮은 Server Time Step마다 서버 업데이트를 진행하게 되면 클라이언트 입장에서는 최대 100ms(데이터 처리량 최대치가 쌓여 있는 경우) + RTT 마다 다른 캐릭터가 Discrete하게 위치가 변경된다.  다음 그림은 Server Time Step에 모든 계산 및 적용을 마치고(100ms) 데이터를 broadcast(<h4 style=\"color: red;\">*이 그림에서 RTT는 빠져 있음)</h4>한 것을 나타낸다. 즉, 100ms마다 Client 2의 입장에서 p의 위치는 100ms마다 툭 툭 끊기면서 위치가 이동되게 된다. 이를 효율적으로 보간해 주는 것이 Entity Interpolation 알고리즘이다.",
+        "imgs" : [ "1.png" ],
+        "title" : "Dealing with low-frequency updates"
+      }, {
+        "contents" : "Dead Reckoning이라는 방식도 있는데, 이 방식은 오브젝트의 이동이 이전 상태로부터 예측 가능할 때에만 사용 가능하다. 실제로 대부분의 항법 장치는 이 알고리즘으로 구현되어 있다고 한다. 보통 FPS 게임이나 RPG 게임 같은 경우엔 갑작스럽게 다른 각도로 회전하거나 이동 방향을 바꿀 수 있으므로 이 방식을 사용할 수 없다.\n Client는 Server로부터 다른 Player들의 위치 정보를 수신받을 때, 그 정보는 Server Time Step(100ms) 이전의 위치가 된다. 그러므로 Client는 100ms 이전의 위치까지를 보간해 줄 수 있다. 다음 그림은 이를 보여 준다. '100ms 늦게 표시하게' 되는 것이다. 하지만 이 방법은 서로 간의 전투 같은 것이 존재하고, 그 실시간성이 중요할 때 위험한 방식이다. 이것은 RTT를 갱신하며 충돌 처리를 계속 보정해 주어야 하는데, 이는 다음 장에서 다룰 것이다.",
+        "imgs" : [ "2.png" ],
+        "title" : "Entity Interpolation"
+      }, {
+        "contents" : "실제로 테스트 해 본 결과, 대략 Server Time Step을 30ms 정도로 설정하니까 충돌 처리를 Client에 맡겨도 얼추 각 클라이언트에서 봐줄만한 게임 세계가 되는 걸 볼 수 있었다.\n 충돌 처리 같은 물리적인 계산을 서버에서 담당한다면, Server Time Step에 패킷 일괄처리를 진행하며 충돌 처리를 할 때는 시간에 따라 패킷을 재구성해 계산할 수 있게 된다. 이 방식을 다음 장에서 다룰 것이다. 하지만, 충돌 처리 계산량 부하가 큰 고사양 게임들은 충돌 처리를 Client가 담당하도록 하는 경우가 많이 있는 것 같다. 그래서 핵이 난무하는 것이고, 이를 감지하기 위한 알고리즘을 생각해 내는 것이다.",
+        "title" : "Summary"
+      } ],
+      "title" : "Entity Interpolation"
+    }, {
+      "items" : [ {
+        "contents" : "<a href=\"https://www.youtube.com/watch?v=tXRN7cPs03U\" target=\"_blank\">https://www.youtube.com</a>\"",
+        "title" : "Client-Side Prediction + Reconciliation + Entity Interpolation"
+      }, {
+        "contents" : "<a href=\"https://www.youtube.com/watch?v=RL-84OFcxTc\" target=\"_blank\">https://www.youtube.com/watch?v=RL-84OFcxTc</a>",
+        "title" : "Bullet Collision Detection on Client-Side(Server Time Step : 30ms)"
+      } ],
+      "title" : "Youtube - 구현 영상(3가지 알고리즘 적용, Bullet 처리 영상)"
+    } ],
+    "title" : "Authoritative Game Server(Node.js/socket.io(websocket)/Phaser.js)"
+  }, {
+    "category" : "tech",
+    "contents" : "[2018.01.21 ~ 2018.02.18] 캐치마인드를 웹으로 만들어 보았습니다. Spring에 익숙해지기 위해 진행한 프로젝트입니다.",
+    "items" : [ {
+      "items" : [ {
+        "contents" : "로그인 UI는 간단하게 만들었습니다. 로그인을 하면 로비로 넘어갑니다.",
+        "imgs" : [ "login1.PNG" ],
+        "title" : "Login"
+      }, {
+        "contents" : "방을 만들게 되면 방으로 이동하게 됩니다.",
+        "imgs" : [ "room1.PNG" ],
+        "title" : "방만들기"
+      }, {
+        "contents" : "Cron 스케쥴링을 이용해 5초에 한 번씩 방 정보를 로비에 있는 유저들에게 보내줍니다.",
+        "imgs" : [ "roomlist.PNG" ],
+        "title" : "Send the room datas to clients in lobby, by Cron Scheduling"
+      }, {
+        "contents" : "Join을 하게 되면 해당하는 방으로 이동됩니다. 정해진 방 인원이 가득 차면 참여할 수 없습니다.",
+        "title" : ""
+      } ],
+      "title" : "Lobby"
+    }, {
+      "items" : [ {
+        "contents" : "좌측 상단의 Ready 버튼을 누르게 되면 레디를 하게 되고, 모든 유저가 레디를 하게 되면 자동으로 5초 카운트다운 후 게임으로 넘어갑니다. 마지막 그림은 Room에서의 Client와 Server의 관계를 간략하게 그린 구조도입니다.",
+        "imgs" : [ "room_ready.PNG", "a2.jpg" ],
+        "title" : "Ready"
+      } ],
+      "title" : "Room"
+    }, {
+      "items" : [ {
+        "contents" : "자신의 턴이면 메시지 알림과 함께 우측 상단의 정답이 보이게 됩니다. 자신의 턴이 아닐 때에는 상대방의 그림을 보고 정답을 맞추어야 합니다. 정답을 맞출 때는 우측 상단의 Send Answer 버튼을 클릭하고 입력하면 됩니다. 다음 그림은 순서대로 자신의 턴과 자신의 턴이 아닐 때의 화면입니다. 마지막 그림은 정답을 맞추기 위해 답을 입력하는 화면입니다.",
+        "imgs" : [ "game1.PNG", "game2.PNG", "msg1.PNG" ],
+        "title" : "게임 진행"
+      }, {
+        "contents" : "정답을 맞추게 되면 다른 사람에게 턴이 넘어갑니다. 다음은 게임 부분의 Server와 Client 간의 관계 구조도입니다.",
+        "imgs" : [ "a3.jpg" ],
+        "title" : ""
+      } ],
+      "title" : "Game"
+    }, {
+      "items" : [ {
+        "contents" : "<a href='https://youtu.be/A20EBT6AMhA' target='_blank'>유튜브 영상 링크</a> <iframe width=\"800\" height=\"600\" style=\"display:block; margin: 0 auto;\" src=\"https://www.youtube.com/embed/A20EBT6AMhA\" frameborder=\"0\" encrypted-media\" allowfullscreen></iframe>",
+        "imgs" : [ "catchmind.jpg" ],
+        "title" : "유튜브 영상"
+      } ],
+      "title" : "유튜브 영상 및 전체 구조"
+    } ],
+    "title" : "캐치마인드 웹게임으로 만들기(Springboot / MySQL / Websocket(+Sock.js) / Mybatis / Thymeleaf)"
+  }, {
+    "category" : "tech",
+    "contents" : "[2017.10.15 ~ 2017.12.15] 운동 기구 IOT를 이용하여 Android Game을 하며 즐겁게 운동할 수 있다.",
+    "items" : [ {
+      "items" : [ {
+        "contents" : "학회 등록된 개발논문입니다.",
+        "imgs" : [ "0001.jpg", "0002.jpg", "0003.jpg" ],
+        "title" : "논문"
+      }, {
+        "contents" : "다음 장은 개발을 위해 센서값을 효율적으로 관리하기 위한 알고리즘을 설명합니다.",
+        "title" : ""
+      } ],
+      "title" : "Article"
+    }, {
+      "items" : [ {
+        "contents" : "센서값은 서로 종속된 값으로 표현되기 때문에 이를 독립적인 값으로 표현해야 쓸데없는 If-else 구문을 사용하지 않고 단순한 Bit 연산을 통해 효율적으로 관리할 수가 있다. 그렇게 하기 위해서 Bitmask를 이용해 이를 개발하였다.",
+        "imgs" : [ "mapping_table.jpg" ],
+        "title" : "Dependent Elementd To Independent Elements"
+      }, {
+        "contents" : "NONE값은 아무것도 누르지 않은 상태이며, + 연산에 대한 항등원으로 사용하기 위함이다.\n이제 Bit 연산을 통한 센서값 관리가 가능해 졌다.\n\n예를 들면 이전 상태와 현재 상태를 비교하였을 때, 빠진 상태는 어떻게 알아낼 수 있을까?\n\n바로\n<h4>이전 상태 - 현재 상태 = 빠진 상태</h4>이런 식의 계산으로 쉽게 알아낼 수 있게 된 것이다.",
+        "title" : ""
+      } ],
+      "title" : "Sensor Mapping With Bitmask"
+    } ],
+    "title" : "Rowing Machine Game with Bluetooth IOT"
+  }, {
+    "category" : "tech",
+    "contents" : "[2017.10.01 ~ 2017.11.12] 일일이 일기예보를 확인하지 않아도 우산을 가져가야 하는지 알 수 있음",
+    "items" : [ {
+      "items" : [ {
+        "contents" : "- 날씨를 잘 확인하지 않는 사람\n- 건망증이 있는 사람\n등",
+        "title" : "Target"
+      }, {
+        "contents" : "아두이노 보드\nGPS\nWIFI-SHIELD\n적외선센서 -> 초음파센서\n배터리 & 충전기\nLED 스트립 (방수)\n압력센서 -> 터치센서\n스피커\n시연용 우산",
+        "imgs" : [ "1.PNG" ],
+        "title" : "Preparation"
+      }, {
+        "contents" : "",
+        "title" : ""
+      } ],
+      "title" : "Introduce"
+    }, {
+      "items" : [ {
+        "contents" : "외출 인식할 시에는 적외선 센서가 빛에 반응하기 때문에 방해받는 요소가 많아서 초음파 센서가 더 나을 거라 판단했다.",
+        "title" : "사람 감지 - 적외선 센서? 초음파 센서?"
+      }, {
+        "contents" : "우산 인식 시 처음엔 압력 센서를 사용하려고 했으나,  테스트 후 단순히 우산 유/무를  판단하기 위함이고 모든 범위에서 우산을 인지해야 하고, 가격도 더 싸기 때문에  터치 센서가 더 나을 거라고 판단했다.",
+        "title" : "압력 센서? 터치 센서?"
+      }, {
+        "contents" : "",
+        "title" : ""
+      }, {
+        "contents" : "준비물 중 하나인 헤더소켓이 아직 도착하지 않아  난항을 겪었다. 헤더소켓이 없어 임시로 브레드보드를 이용하고 점퍼 선을 직접 납땜하여 연결하였다.",
+        "title" : "Wifi Shield와 Arduino 보드 연결"
+      }, {
+        "contents" : "Sketchup으로 디자인하여 stl 파일로 추출했고, 학교에 새로 생긴 3D 프린터를 이용하여 우산꽂이 형태를 만들었다. 윗부분에는 수분 증발에 좋은 규조토를 담을 것이고, 아랫 부분에는 회로와 보드를 담고 그 아래에는 배터리를 넣을 것이다.",
+        "title" : "3D Printing (Sketchup stl 이용)"
+      }, {
+        "contents" : "규조토 판을 우산 (TIP쪽) 놓는 곳에 배치하여 외출 후 젖은 우산에서 흐르는 비도 쉽게 흡수되어 마르고, 더불어 다른 곳으로 가는 물기를 사전에 모두 제거하기 위함이다.",
+        "title" : "규조토 판"
+      }, {
+        "contents" : "초음파 센서 / 터치 센서 등의 재료들을 모두 조립한다. 헤더소켓이 도착해서 Arduino 보드와 Wifi Shield의 납땜도 다시 하였다.",
+        "imgs" : [ "7.PNG" ],
+        "title" : "조립"
+      }, {
+        "contents" : "",
+        "title" : ""
+      } ],
+      "title" : "Development Process"
+    }, {
+      "items" : [ {
+        "contents" : "다음은 완성 사진이다.(GPS는 실내에서 작동하지 않는다...)",
+        "imgs" : [ "KakaoTalk_20171104_172332145.jpg" ],
+        "title" : "IOT 우산꽂이 완성!"
+      }, {
+        "contents" : "하지만 뚜껑이 필요하다 느껴 뚜껑을 3D 프린터로 만들었다. 다음은 간단한 설계.",
+        "imgs" : [ "8.jpg" ],
+        "title" : ""
+      }, {
+        "contents" : "다음은 만들어진 뚜껑",
+        "imgs" : [ "9.jpg", "10.jpg" ],
+        "title" : ""
+      }, {
+        "contents" : "다음은 진짜 완성된 모습이다. 뚜껑에 얇은 자석 종이? 를 붙여 자석으로 붙였다 뗄 수 있게 구성하였다.",
+        "imgs" : [ "KakaoTalk_20171104_172328338.jpg" ],
+        "title" : ""
+      } ],
+      "title" : "결과물"
+    }, {
+      "items" : [ {
+        "contents" : "자석을 이용하여 철판에 붙였다 뗄 수 있기 때문에, 현관문 같은 곳에 붙일 수 있다. 가까이 가면 초음파 센서가 반응하여 Wifi Shield로 날씨 데이터를 가져온다. 이 데이터를 이용해 오늘 날씨에 해당하는 색을 LED 스트립의 빛으로 알려준다. 우산을 가져가게 되면 불빛이 꺼지며 다시 대기 상태로 돌입한다.",
+        "imgs" : [ "KakaoTalk_20171104_172328778.jpg", "완성.PNG" ],
+        "title" : "IOT 우산꽂이"
+      }, {
+        "contents" : "아두이노가 간단하다는 것을 알게 되었고, 이런 특별한 물건을 만든다는 것이 참 재밌었다. 아두이노를 다루는 데 있어 전자회로 쪽 지식이 있다면 더 좋겠지만, 조금만 알아도 많은 것들을 할 수 있다는 것은 대단한 일이라고 생각한다.",
+        "title" : "Summary"
+      }, {
+        "contents" : "다음은 플로우 차트이다. GPS는 실내에선 이용할 수 없어서.. 다른 방법을 생각해 보아야 할 것 같다.. ",
+        "imgs" : [ "차트.PNG" ],
+        "title" : ""
+      } ],
+      "title" : "결과물2(진짜 최종 결과물)"
+    } ],
+    "title" : "IOT 우산꽂이"
+  }, {
+    "category" : "tech",
+    "contents" : "[2017.04.21 ~2017.05.27] CPU만 이용한 구현과 Nvidia의 Cuda를 이용한 병렬프로그래밍으로 RayTracing을 구현한다.",
+    "items" : [ {
+      "items" : [ {
+        "contents" : "일반적인 생각으로는 광원으로부터 빛 벡터들을 생성해 물체들과 충돌하여 반사되는 과정이 있고, 그것들 중 카메라에 도달하는 벡터가 맵핑이 되는 것이지만, 반대로 카메라에 도달하지 못하는 벡터들은 버려지기 때문에 쓸데없는 계산을 하게 된다. 그렇기 때문에 고안된 것이 LayTracing이다. 이 방식은 광원으로부터가 아닌, 시점(카메라)으로부터 벡터를 생성해 거꾸로 Trace하여 계산한다. 즉, 꼭 필요한 계산만 하는 것이다.\n\n처음엔 GPU를 사용하지 않고 CPU만 이용해서 LayTracing을 구현해 보았다. 속도는 오브젝트의 충돌 처리에 필요한 계산에 따라 굉장히 큰 차이가 난다.",
+        "title" : "Introduce"
+      }, {
+        "contents" : "실제 보는 위치에서의 색은 다음과 같이 정해진다.\n\nIdirect : Local illumination 결과값\nIreflected : 반사벡터를 구해 Tracing을 하는 것을 반복하여 구해진 최종 Color 값\nItransmitted : 굴절벡터를 구해 Tracing을 하는 것을 반복하여 구해진 최종 Color값",
+        "imgs" : [ "1.PNG" ],
+        "title" : "Mapping"
+      }, {
+        "contents" : "반사벡터 R은 다음과 같이 간단히 구할 수 있다.",
+        "imgs" : [ "2.PNG" ],
+        "title" : "Reflection Ray"
+      }, {
+        "contents" : "Snell의 법칙으로 굴절 벡터를 구한다. 다음 그림을 보자.",
+        "imgs" : [ "3.PNG" ],
+        "title" : "Refracted Ray by Snell's Law"
+      }, {
+        "contents" : "ni, nt는 굴절률을 뜻한다. Snell의 법칙은 다음과 같다.",
+        "imgs" : [ "4.PNG" ],
+        "title" : ""
+      }, {
+        "contents" : "그리고 다음 식을 적용한다. Snell의 법칙을 이용해 굴절벡터를 실질적으로 구하는 식이다.",
+        "imgs" : [ "5.PNG" ],
+        "title" : ""
+      }, {
+        "contents" : "이 굴절 계수는 물질마다 정해져 있는데, 다음은 그 예이다.",
+        "imgs" : [ "굴절계수.PNG" ],
+        "title" : ""
+      }, {
+        "contents" : "Phong 쉐이딩을 사용한 Local Illumination을 진행한다. Phong 쉐이딩은 화소 단위로 렌더링을 수행함으로써 질감, 반사, 투명도, 등의 효과를 정교하게 반영해 주는 기법이다. 다음은 그 공식이다. 광원들과의 1차적인 관계에서의 Color값을 구한다.",
+        "imgs" : [ "6.PNG" ],
+        "title" : "Local Illumination by Phong model"
+      }, {
+        "contents" : "krg : 반사계수\nktg : 굴절계수\n\nLocal Illumination 값을 구하고, 반사 벡터와 굴절 벡터로부터 구해온 Color값을 모두 더해주면(색은 더해줄 수록 밝아진다) 실제와 흡사한 Color값을 구하게 된다.",
+        "title" : "Global Illumination"
+      }, {
+        "contents" : "실제로 모든 픽셀에 대한 벡터를 계산하여 Trace해 주어야 한다. 그렇기 때문에 다음 계산을 거쳐 각 벡터를 구해주고 그에 대해 Trace를 시켜 주는 것이다.",
+        "imgs" : [ "camera.PNG" ],
+        "title" : "How to calculate eye vectors from the pixels?"
+      }, {
+        "contents" : "구와 충돌하는 지점을 계산하는 방법은 다음과 같다.",
+        "imgs" : [ "8.PNG" ],
+        "title" : "Intersection (Sphere)"
+      }, {
+        "contents" : "d가 단위벡터이므로 벡터 c와 내적을 하면 tc값이 나온다. 그럼 b^2는 피타고라스 정리에 의해 구할 수 있고, 위의 식을 이용하여 tu를 구한다.\n그럼 최종적으로 tc + tu를 하여 충돌점을 구한다.",
+        "title" : ""
+      }, {
+        "contents" : "구 말고도 Plane, Box Intersection도 공식을 찾아 구한다.",
+        "title" : ""
+      }, {
+        "contents" : "이렇게 Global Illumination을 구하는 방법들을 알아보았다. 다음 장에서는 CPU를 이용한 방식과 GPU를 이용해 Parallel Programming을 이용해 구현한 결과를 보여 줄 것이다.",
+        "title" : "Conclusion"
+      } ],
+      "title" : "Development Process"
+    }, {
+      "items" : [ {
+        "contents" : "Polygon의 양에 따라 속도가 저하된다. CPU 자체는 빠르겠지만, 아무래도 RAM에 데이터를 모두 올려 소수의 Core가 이에 접근하여 데이터 처리를 하는 방식이라 GPU를 이용하는 방식과는 속도 차이가 크다. GPU를 이용하게 되면 수많은 GPU Core의 Thread 각각의 메모리에 값을 할당하여 빠르게 처리가 가능하다. 나는 Nvidia의 Cuda를 이용하여 이를 구현하였다.",
+        "title" : "Introduce"
+      }, {
+        "contents" : "사실 이렇게 간단히 설명하고 있지만 나름 어려웠다... 1주일 내내 밤새서 구현했다.. 오류 한 번 확인하는데 1분씩 걸렸으니까....\n코드는 Github에 올려 두었다. <h4><a href=\"https://github.com/hsb0818/Global_Illumination_By_RayTracing\" target=\"_blank\">https://github.com/hsb0818/Global_Illumination_By_RayTracing</a></h4>\n",
+        "imgs" : [ "last.png" ],
+        "title" : "Based on CPU"
+      }, {
+        "contents" : "Cuda 병렬 프로그래밍을 이용하여 구현해 보니, 간단한 모델 여러 개 정도는 실시간으로 계산이 가능해 졌다. 신기하다.\n\n이 프로그램은 친구와 둘이서 함께 개발하였고, 마찬가지로 코드는 Github에 올려 두었다.\n<h4><a href=\"https://github.com/YoonChangKook/CudaRayTracing\" target=\"_blank\">https://github.com/YoonChangKook/CudaRayTracing</a></h4>\n\n Cuda에 관한 설명은 우선... 구조는  다음과 같이 직접 그려 보았다. 설명은 나중에 시간 날 때 올리겠다.",
+        "imgs" : [ "cudastructure.png", "cudaraytracing.png" ],
+        "title" : "Based on GPU"
+      }, {
+        "contents" : "똑같은 모델을 로딩해서 계산했을 때, CPU와 GPU 각각의 성능 차이는 굉장히 컸다.\n\n환경은 Intel I5-4670 3.40GHz / GTX 760이고, 성능 차이는 다음과 같았다.\n\n<h4>CPU: 1275 ms</h4>\n<h4>GPU: 35 ms</h4>",
+        "title" : "Conclusion"
+      }, {
+        "contents" : "1) Cuda에서는 재귀함수에 대한 제약이 있기 때문에 <h4>cudaDeviceSetLimit(cudaLimitStackSize, 크기)</h4> 함수를 이용하여 Kernel 당 Stack의 크기를 조절해 주어야 했다.\n\n2) CPU에서 GPU로 복사 시 가상함수(C++)가 있는 객체는 복사가 제대로 되지 않는다. (가상함수가 수행이 안됨) 따라서 가상함수가 존재하지 않는 타입만 GPU로 복사하여 GPU 내에서 객체를 만들어야 했다.",
+        "title" : "*Note"
+      } ],
+      "title" : "Implement Global Illumination (CPU & GPU)"
+    } ],
+    "title" : "Global Illumination by RayTracing"
+  }, {
+    "category" : "tech",
+    "contents" : "[2017.04.13 ~ 2017.05.15] Bluetooth를 이용해 부모/아이 간의 Bluetooth 신호인 RSSI값의 강도를 이용한 거리 측정 및 알람 설정",
+    "items" : [ {
+      "items" : [ {
+        "contents" : "Bluetooth 모듈을 얻게 되어, 이걸로 뭘 할 수 있을지 한번 고민해 보다가 미아방지 관련된 시스템을 만들 수 있을 것 같다 생각하여 만들게 되었다. 블루투스 모듈은 팔찌나 목걸이 형태로 아이에게 착용시키고, 부모의 스마트폰과 연동하여 신호 강도에 따라 아이가 멀어지면 알람을 울리는 등의 미아방지 시스템을 구성했다.",
+        "title" : "Introduce"
+      }, {
+        "contents" : "RSSI는 Received Signal Strength Indicator의 약자이며, 범위는 보통 -99 에서 -35이다. Bluetooth 통신 최대 범위는 10m 정도로, 생각보다 그리 넓지 않기 때문에, 블루투스 만으로는 조금 넓은 실내에서, 혹은 놀이터 같은 곳에서의 미아방지 정도가 가능할 것이다.",
+        "title" : "RSSI란?"
+      }, {
+        "contents" : "RSSI값을 총 5구간으로 구성해, 부모는 스마트 폰으로 현재 거리 상태를 알 수 있다. 다음 사진은 순서대로 가장 가까운 정도를 나타낸다. 녹색은 가까움, 분홍색으로 갈수록 멀어짐을 의미한다.\n",
+        "imgs" : [ "수정됨_KakaoTalk_20170618_133810829.jpg", "수정됨_KakaoTalk_20170618_133811199.jpg", "수정됨_KakaoTalk_20170618_133811557.jpg", "수정됨_KakaoTalk_20170618_133811875.jpg", "수정됨_KakaoTalk_20170620_210153076.jpg" ],
+        "title" : "Alarm"
+      }, {
+        "contents" : "분홍색이 되면 블루투스 최대 통신 범위를 넘어선 것으로, 아이가 부모로부터 10m 밖으로 나간 경우이다. 이 때는 핸드폰에 알람이 울리며 위와\n 같은 Detecting 화면이 자동으로 실행된다. 그 때부터는 저 원의 색깔을 보며 아이와의 거리를 좁혀 나가야 하는 것이다.",
+        "title" : ""
+      } ],
+      "title" : "미아방지"
+    }, {
+      "items" : [ {
+        "contents" : "신호 강도에 대한 5구간의 색깔을 설정할 수 있다.\n",
+        "imgs" : [ "수정됨_KakaoTalk_20170618_133809411.jpg" ],
+        "title" : "신호 색깔 설정"
+      }, {
+        "contents" : "전체적인 흐름은 다음과 같다.",
+        "imgs" : [ "Flowchart.jpg" ],
+        "title" : "Flowchart"
+      } ],
+      "title" : "Flowchart와 UI 구성"
+    } ],
+    "title" : "미아방지를 위한 IOT(Android/Java)"
+  }, {
+    "category" : "awards",
+    "contents" : "",
+    "items" : [ {
+      "title" : "[2011.09.23] 동국대학교 창작게임공모전 장려상 동국대학교"
+    }, {
+      "title" : "[2010.09.18] 전국 고교생 게임 아이디어 공모전 최우수상 / 서강대학교 게임교육원"
+    }, {
+      "title" : "[2010.09.03] 전국 학생 게임공모전 특별상 / 공주대학교"
+    }, {
+      "title" : "[2010.08.14] 2010 청소년 게임캠프 대상 / 전북 디지털 산업진흥원"
+    }, {
+      "title" : "[2010.08.13] Korea Web Contest 은상 / 솔브릿지 국제대학, 대전MBC, 우송대학교"
+    }, {
+      "title" : "[2010.06.25] 2010년도 창업동아리 우수아이템 개발지원사업 전북지역 6위 / 전북지방 중소기업청"
+    } ],
+    "title" : "Awards"
+  }, {
+    "category" : "experience",
+    "contents" : "Mojitok : 삼성 갤럭시와 함께한 CDN 서버를 활용한 글로벌 이모티콘 추천 서비스 및 키보드에서 사용되는 SDK 개발(자세한 내용은 대외비)",
+    "items" : [ {
+      "items" : [ {
+        "contents" : "현재 전세계에서 사용되는 삼성 갤럭시 스마트폰의 키보드에 탑재된 Mojitok 이모티콘 추천 서비스 서버를 개발했습니다.\n키보드에서 글을 입력하게 되면 키보드 상단에 해당 이모티콘이 추천되도록 하는 기능이며, 현재 API 요청량은 월간(30일) 1억 3천만 정도입니다.\n제가 담당한 부분은 이 서버를 설계하고 개발하는 것이었습니다. 당시 서버 개발자는 2명으로, 함께 설계하고 개발했습니다.",
+        "title" : "Summary"
+      }, {
+        "contents" : "이 서비스를 개발하기 위해 AWS 리소스들의 강의와 자료들을 분석해야 했습니다.\n\n먼저, AWS의 EC2(컴퓨터라고 생각하면 됩니다)를 이용해 개발하는 방법이 있습니다만, 이를 이용해 전 세계에 서비스를 제공하려면 모든 리젼에 대해 구성해야 하며, 이는 동작되는 장소가 리젼에 한정적이고, 트래픽도 해당 리젼에 몰리게 되는 문제가 있으며, 서버를 항상 켜 두어야 하기 때문에 비용이 커지게 됩니다.\n관리에 대한 문제도 존재합니다. 사용량이 많고 적음에 따라 해당 서버의 성능을 설정해줘야 합니다.\n\n하지만 삼성 갤럭시에 탑재되는 Mojitok 서비스는 입력 데이터에 대해 실시간으로 서버를 통해 검색할 필요가 없다는 점에 착안하여\nCDN을 이용한 방법을 알아보게 되었습니다.\n\nCDN을 이용하게 되면 해당 CDN에서 Origin에 요청을 보내고 받는 부분, CDN과 Viewer(갤럭시 스마트폰)의 RTT만 고려하면 되고,\n리젼보다 넓은 범위에 존재하는 캐시 서버이며, 요청량과 전송 데이터 용량에 대해서만 비용을 지불하면 되므로 이를 선택하게 되었습니다. ",
+        "title" : "CDN 이용 : 어떤 자원을 이용해야 할까?"
+      }, {
+        "contents" : "CDN을 이용한다 하더라도 비용은 여전히 크기 때문에, Android HTTP 캐시를 이용하는 방법을 생각했습니다.\n그렇게 되면 HTTP 헤더의 Cache-Control에 설정한 기간 동안 다시 서버에 요청하지 않게 되며, Etag 혹은 Last-Modified 값을 추가로 설정하면\nConditional Get 요청으로 해당 데이터가 동일한 데이터라면 로컬 캐시를 다시 이용하게 되기 때문에 불필요한 트래픽이 발생하지 않게 되어 또 한 번 비용이 감소하게 됩니다. 물론 캐시 유지기간을 어떻게 설정하느냐에 따라서 달라집니다.",
+        "title" : "Cache : Server & Viewer(갤럭시 스마트폰)"
+      }, {
+        "contents" : "1. Conditional Get을 위해 Etag를 적용하게 된다면 CDN과 Origin 사이의 캐시 문제가 발생해서 해결했습니다. 자세한 내용은 대외비입니다.\n2. Origin은 리젼이 존재하는데, CDN과 리젼 사이의 RTT가 큰 경우도 있었습니다. 이를 해결했습니다. 자세한 내용은 대외비입니다.",
+        "title" : "문제 1: CDN과 Origin 간의 캐시 정책과 여전히 존재하는 RTT 문제"
+      }, {
+        "contents" : "이모티콘 추천 서비스 컨텐츠에 대해 국가별로 다른 데이터를 전송해야 했습니다. 자세한 내용은 대외비입니다.",
+        "title" : "문제 2: 국가별 컨텐츠 배포 문제"
+      }, {
+        "contents" : "최대한 캐시를 이용하도록 개발했으며, 외부 라이브러리를 사용하지 않아야 했습니다.\n텍스트 분석에서 Regex 복잡한 구성이 필요했고, 캐시된 컨텐츠 추천에 필요한 검색 로직과 DB를 설계 및 구현했습니다.\n자세한 내용은 대외비입니다.",
+        "title" : "Android SDK"
+      }, {
+        "contents" : "Terraform을 이용해 모든 AWS 자원을 관리했습니다.",
+        "title" : "리소스 관리"
+      } ],
+      "title" : "서버 / 캐시 / SDK 로직 설계 및 개발"
+    } ],
+    "title" : "[2019.04.08 ~ 현재] 플랫팜 : Back-end 개발자"
+  } ]
+}
