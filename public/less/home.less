@@ -2,13 +2,25 @@
 @bodycolor: #fff;
 @textcolor: black;
 
+@font-face {
+  font-family: "NotoSansKR";
+  src: url("../fonts/notoSansKR/NotoSansKR-Bold.otf") format("woff");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NotoSansKR";
+  src: url("../fonts/openSans/OpenSans-SemiBold.ttf") format("woff");
+  unicode-range: U+0020-007E;
+  font-style: normal;
+}
+
 html {
   background-color: @bgcolor;
 }
 
 body {
   color: @textcolor;
-  font-family: Georgia, "Malgun Gothic", serif;
   line-height: 1.5;
 }
 
@@ -18,10 +30,6 @@ body {
   box-shadow: 0 0 20px;
   padding: 25px 45px;
   background-color: @bodycolor;
-
-  h1, h2 {
-    font-family: "Helvetica", "Arial", sans-serif;
-  }
 
   a {
     text-decoration: none;

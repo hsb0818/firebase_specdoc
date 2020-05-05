@@ -21,8 +21,15 @@ $(document).ready(function () {
   const subMain = $('#subMain');
   const categoryItems = {};
 
+  const regex = /(\d{4})|(\d{2})/g;
   rootRef.child('category').once('value').then((snap) => {
-    const categories = snap.val();
+    const categories = snap.val()
+      .sort((a, b) => {
+        a = dateArrayToInteger(createSuitableArrayWithFillZero(a.title.match(regex), 2));
+        b = dateArrayToInteger(createSuitableArrayWithFillZero(b.title.match(regex), 2));
+
+        return b - a;
+      });
 
     for (const category of categories) {
       const item = $('<div></div>');
@@ -100,3 +107,22 @@ $(document).ready(function () {
     });
   }
 });
+
+function createSuitableArrayWithFillZero(arr, size) {
+  if (!arr instanceof Array) {
+    return [];
+  } else if (arr.length < size) {
+    return arr.concat(new Array(size - arr.length).fill(0));
+  }
+
+  return arr.slice(0, size);
+}
+
+function dateArrayToInteger(dates) {
+  return dates.reduce((acc, date, i) => {
+    date = parseInt(date);
+    factor = Math.pow(100, dates.length - 1 - i);
+
+    return acc + date * factor;
+  }, 0);
+}
