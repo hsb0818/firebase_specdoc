@@ -45,7 +45,6 @@ $(document).ready(function () {
       console.log(snapDoc.val());
       const docs = snapDoc.val()
         .sort((a, b) => {
-          console.log(a.title.match(regex));
           a = dateArrayToInteger(createSuitableArrayWithFillZero(a.title.match(regex), 2));
           b = dateArrayToInteger(createSuitableArrayWithFillZero(b.title.match(regex), 2));
 
