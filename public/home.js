@@ -21,16 +21,8 @@ $(document).ready(function () {
   const subMain = $('#subMain');
   const categoryItems = {};
 
-  const regex = /(\d{4})|(\d{2})/g;
   rootRef.child('category').once('value').then((snap) => {
-    const categories = snap.val()
-      .sort((a, b) => {
-        a = dateArrayToInteger(createSuitableArrayWithFillZero(a.title.match(regex), 2));
-        b = dateArrayToInteger(createSuitableArrayWithFillZero(b.title.match(regex), 2));
-
-        return b - a;
-      });
-
+    const categories = snap.val();
     for (const category of categories) {
       const item = $('<div></div>');
       const title = $('<h2></h2>');
@@ -48,8 +40,18 @@ $(document).ready(function () {
       subMain.append(item);
     }
 
+    const regex = /(\d{4})|(\d{2})/g;
     rootRef.child('docs').once('value').then((snapDoc) => {
-      const docs = snapDoc.val();
+      console.log(snapDoc.val());
+      const docs = snapDoc.val()
+        .sort((a, b) => {
+          console.log(a.title.match(regex));
+          a = dateArrayToInteger(createSuitableArrayWithFillZero(a.title.match(regex), 2));
+          b = dateArrayToInteger(createSuitableArrayWithFillZero(b.title.match(regex), 2));
+
+          return b - a;
+        });
+
       for (const i in docs) {
         const root = $('<li></li>');
         const doc = $('<p></p>');
@@ -109,8 +111,8 @@ $(document).ready(function () {
 });
 
 function createSuitableArrayWithFillZero(arr, size) {
-  if (!arr instanceof Array) {
-    return [];
+  if (!arr || !arr instanceof Array) {
+    return new Array(size).fill(0);
   } else if (arr.length < size) {
     return arr.concat(new Array(size - arr.length).fill(0));
   }
